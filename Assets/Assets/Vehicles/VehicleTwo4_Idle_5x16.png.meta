@@ -1,0 +1,1887 @@
+fileFormatVersion: 2
+guid: 1a9a12cf29501224f87a477d257fa8d0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 128
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_0
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 7788
+        width: 140
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d463e753150b84d9bca28b5b81afa6
+      internalID: 258690084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_1
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 7788
+        width: 140
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03572ef86ef720469c6d60008729c5c
+      internalID: 924607817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_2
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 7788
+        width: 140
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9685ad9ec9519ee409e969c6d14e923b
+      internalID: 1055180284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_3
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 7788
+        width: 140
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9a3641c62ba3149a9dcefa58023f56
+      internalID: 18045667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_4
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 7788
+        width: 140
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0aba0d6a3699047aa631db17f5e24e
+      internalID: -736042697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 7336
+        width: 340
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9749aae99a2ee446b8d4c878116fff4
+      internalID: -138996672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_6
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 7336
+        width: 340
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5890bea76cc9bf4a872d71f2726af85
+      internalID: -2065301212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_7
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 7336
+        width: 340
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1797974b4816094d83ce28fe152edfa
+      internalID: 1574008074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_8
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 7336
+        width: 340
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b5212bdc6b6b84599baef9c70cb7e1
+      internalID: -249560624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_9
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 7336
+        width: 340
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07a0d5abccc70c498f780cc637efd82
+      internalID: -1241575967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 6824
+        width: 340
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0974eed2e2993e24fac0c7ebb2b60a61
+      internalID: -1734168930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_11
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 6824
+        width: 340
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0267000fbd7ad048b836013b0d6ce6f
+      internalID: -1519552283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_12
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 6824
+        width: 340
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d093751345d6a4b812f52f2daf235e
+      internalID: -1633808302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_13
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 6824
+        width: 340
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ebc72474762184693b52e32aa358c5
+      internalID: -1176009678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_14
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 6824
+        width: 340
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ff018f2ff2273438e5436b06f03968
+      internalID: 1529428175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_15
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 6252
+        width: 140
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0410678403222642a4c94aca5cc2512
+      internalID: -129902829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_16
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 6252
+        width: 140
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de3e3b2f52be374fb0151f49dc5534b
+      internalID: 680251346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_17
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 6252
+        width: 140
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa22af4e10c15f445b96709061728b46
+      internalID: 1113324508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_18
+      rect:
+        serializedVersion: 2
+        x: 1716
+        y: 6252
+        width: 140
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6888488bb4a31b843992a696bf8ed902
+      internalID: 1039655761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_19
+      rect:
+        serializedVersion: 2
+        x: 2228
+        y: 6252
+        width: 140
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfb0ff7450e9ba4893dff566698f8a4
+      internalID: 1909924052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 5752
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c7f697b312a8b4d903b29d122aa869
+      internalID: 204271482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_21
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 5752
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4083d37e5c0bde44e8d8e767bb95d374
+      internalID: 655705260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_22
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 5752
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f383afc61a1cd43a30505e18c332fe
+      internalID: -1948130011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_23
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 5752
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3702f7a4c47aca4c9407e2121f0784d
+      internalID: -23767053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_24
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 5752
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2b39663e240314b8583ece1c89348b
+      internalID: -1129347909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_25
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 5240
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b1a910cada0d14ea31a0d71f7638b7
+      internalID: -1294678545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_26
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 5240
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8f5af6cf65fb242814de23267d47da
+      internalID: 170843769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_27
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 5240
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7f4e562326d1947bdc327a5501679b
+      internalID: 890017201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_28
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 5240
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf5b4341bafe724db5b730773376d17
+      internalID: 1162852508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_29
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 5240
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5a057d3aa24c843b449c8906c733a0
+      internalID: -1179803007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_30
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 4728
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af1fc132ec38354dafa4048b90639b1
+      internalID: 1589432263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_31
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 4728
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfec87430d1ec54d80f8ef6fa47dd6b
+      internalID: -579591852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_32
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 4728
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b4073f49948d6945bba930b155cc11c
+      internalID: -456094543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_33
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 4728
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c7231b3a127214587b3c911324f5f9
+      internalID: -1659887840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_34
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 4728
+        width: 296
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ceb9953a2aacd4eb45538f89111bce
+      internalID: 1674095352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_35
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 4216
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6762429fbab674cb19620392846eaf
+      internalID: -200811308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_36
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 4216
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0598b9133c4e4d24499354dcf74c8da7
+      internalID: -1309004360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_37
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 4216
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d97b024d38d554a97e40aa05640594
+      internalID: -496119512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_38
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 4216
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dc7db15588bfa45996d541547b2cb2
+      internalID: -2000525160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_39
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 4216
+        width: 296
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e51086c9a2c0bc408a3ddb75b869a0f
+      internalID: 1323341655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_40
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 3692
+        width: 228
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f0e1c982a2df44ea022b5b53119e0b
+      internalID: -1693316874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_41
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 3692
+        width: 228
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc460311b65b18149bb998f1c7671117
+      internalID: 1419998774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_42
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 3692
+        width: 228
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 698bdf4a043bc754d9602b20c705ac4d
+      internalID: 1467332835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_43
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 3692
+        width: 228
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528436adbee449648a0621d1b5cb10fb
+      internalID: 1740812537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_44
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 3692
+        width: 228
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f23aba5b4f003f48b44abba6b256048
+      internalID: -554256908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_45
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 3212
+        width: 328
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d62f6c0d0ab59094591f02f780159cc0
+      internalID: -1029969784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_46
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 3212
+        width: 328
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbaa667c1b4c204469f1aac633d3dd92
+      internalID: 870993363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_47
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 3212
+        width: 328
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9168339efb8d08f4ab28693ff4178692
+      internalID: 1631314087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_48
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 3212
+        width: 328
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2887737c840af8643af3f74c7cfb4c7b
+      internalID: 1932814642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_49
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 3216
+        width: 328
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110e69735c4ffbf4e99fdeac7d772798
+      internalID: -160479943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_50
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2704
+        width: 328
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59075036548a7124d90e2cf54a1bf66a
+      internalID: 1288441889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_51
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 2704
+        width: 328
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2578307d4be3fb14483c758f543e2dd6
+      internalID: 667379935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_52
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 2704
+        width: 328
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8ad2a75e9e3594f83ca9d3273e01e1
+      internalID: 139860698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_53
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 2704
+        width: 328
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7d2dffeeaeeb645bd34ad3df697220
+      internalID: -1083818631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_54
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 2704
+        width: 328
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2482626067cde5d469cf41a9e0c2bdc1
+      internalID: -242467412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_55
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 2160
+        width: 228
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c55ccf28dd3b8b43b279bbe6aba02ba
+      internalID: -1032571240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_56
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 2160
+        width: 228
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccfe336ecbd1084e9cf84ada7916133
+      internalID: 1543160330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_57
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 2160
+        width: 228
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11b469496c7cf34b86404acb728bcbb
+      internalID: 58381284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_58
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 2160
+        width: 228
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cd09436fb50a74895a6029a420a39c
+      internalID: 418054176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_59
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 2160
+        width: 228
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35894616f30bd847aad157cce10b323
+      internalID: -1438727909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_60
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1648
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77d2aceb5e1c3748b452bd920a8fcca
+      internalID: 1842646831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_61
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1648
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc10f5c3d2d9e1648943f9b5d9fe7e3d
+      internalID: 2047349473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_62
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1648
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132d7ebfa801fb940a003926f9582b99
+      internalID: 2049131056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_63
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 1648
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba68766ef46c154a900be3c6b409fe0
+      internalID: 1272602506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_64
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 1648
+        width: 224
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f480721ab83fd14cbfde0801d5e3206
+      internalID: 1940671353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_65
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1168
+        width: 328
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab42a5d634af2d45b9093da4ed00389
+      internalID: -335575546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_66
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1168
+        width: 328
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b56c8e2d9d66654a84b05d320362430
+      internalID: -152674803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_67
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 1168
+        width: 328
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765752d9e16cc1044800d54b991e6c18
+      internalID: -1033653192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_68
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 1168
+        width: 328
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4919434b49d08d2458fb3413487fe7c3
+      internalID: -568516523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_69
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 1168
+        width: 328
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6c92087fa3b7d419e3253c11685e26
+      internalID: 568390477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_70
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 652
+        width: 328
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bdb2450a237364597cec7d8390e8a1
+      internalID: 519862892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_71
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 652
+        width: 328
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d038ef0a3c6ea5c4f915ae1dae33f81d
+      internalID: 1509275699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_72
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 652
+        width: 324
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754fd52b502f24440be36fe7392840b3
+      internalID: -461852931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_73
+      rect:
+        serializedVersion: 2
+        x: 1624
+        y: 652
+        width: 328
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089254dda90ac484586ef1eed70d0b41
+      internalID: 318147094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_74
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 656
+        width: 328
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cc1fe585d7b85b468c358fcf160dd9c
+      internalID: 1658647601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_75
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 108
+        width: 224
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec410bb09e61fed49bbea272e7635e22
+      internalID: -820491428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_76
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 108
+        width: 224
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a10c366100414d4694b1092fbacc309
+      internalID: -784507641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_77
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 108
+        width: 224
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c986d706130204d919d2a6783f7863
+      internalID: 2020632965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_78
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 108
+        width: 224
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04966b7146c55c04b8cf0685a4576664
+      internalID: 54078233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VehicleTwo4_Idle_5x16_79
+      rect:
+        serializedVersion: 2
+        x: 2184
+        y: 108
+        width: 224
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5412b51653820054cb5abf3ba7023447
+      internalID: 1600153154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      VehicleTwo4_Idle_5x16_0: 258690084
+      VehicleTwo4_Idle_5x16_1: 924607817
+      VehicleTwo4_Idle_5x16_10: -1734168930
+      VehicleTwo4_Idle_5x16_11: -1519552283
+      VehicleTwo4_Idle_5x16_12: -1633808302
+      VehicleTwo4_Idle_5x16_13: -1176009678
+      VehicleTwo4_Idle_5x16_14: 1529428175
+      VehicleTwo4_Idle_5x16_15: -129902829
+      VehicleTwo4_Idle_5x16_16: 680251346
+      VehicleTwo4_Idle_5x16_17: 1113324508
+      VehicleTwo4_Idle_5x16_18: 1039655761
+      VehicleTwo4_Idle_5x16_19: 1909924052
+      VehicleTwo4_Idle_5x16_2: 1055180284
+      VehicleTwo4_Idle_5x16_20: 204271482
+      VehicleTwo4_Idle_5x16_21: 655705260
+      VehicleTwo4_Idle_5x16_22: -1948130011
+      VehicleTwo4_Idle_5x16_23: -23767053
+      VehicleTwo4_Idle_5x16_24: -1129347909
+      VehicleTwo4_Idle_5x16_25: -1294678545
+      VehicleTwo4_Idle_5x16_26: 170843769
+      VehicleTwo4_Idle_5x16_27: 890017201
+      VehicleTwo4_Idle_5x16_28: 1162852508
+      VehicleTwo4_Idle_5x16_29: -1179803007
+      VehicleTwo4_Idle_5x16_3: 18045667
+      VehicleTwo4_Idle_5x16_30: 1589432263
+      VehicleTwo4_Idle_5x16_31: -579591852
+      VehicleTwo4_Idle_5x16_32: -456094543
+      VehicleTwo4_Idle_5x16_33: -1659887840
+      VehicleTwo4_Idle_5x16_34: 1674095352
+      VehicleTwo4_Idle_5x16_35: -200811308
+      VehicleTwo4_Idle_5x16_36: -1309004360
+      VehicleTwo4_Idle_5x16_37: -496119512
+      VehicleTwo4_Idle_5x16_38: -2000525160
+      VehicleTwo4_Idle_5x16_39: 1323341655
+      VehicleTwo4_Idle_5x16_4: -736042697
+      VehicleTwo4_Idle_5x16_40: -1693316874
+      VehicleTwo4_Idle_5x16_41: 1419998774
+      VehicleTwo4_Idle_5x16_42: 1467332835
+      VehicleTwo4_Idle_5x16_43: 1740812537
+      VehicleTwo4_Idle_5x16_44: -554256908
+      VehicleTwo4_Idle_5x16_45: -1029969784
+      VehicleTwo4_Idle_5x16_46: 870993363
+      VehicleTwo4_Idle_5x16_47: 1631314087
+      VehicleTwo4_Idle_5x16_48: 1932814642
+      VehicleTwo4_Idle_5x16_49: -160479943
+      VehicleTwo4_Idle_5x16_5: -138996672
+      VehicleTwo4_Idle_5x16_50: 1288441889
+      VehicleTwo4_Idle_5x16_51: 667379935
+      VehicleTwo4_Idle_5x16_52: 139860698
+      VehicleTwo4_Idle_5x16_53: -1083818631
+      VehicleTwo4_Idle_5x16_54: -242467412
+      VehicleTwo4_Idle_5x16_55: -1032571240
+      VehicleTwo4_Idle_5x16_56: 1543160330
+      VehicleTwo4_Idle_5x16_57: 58381284
+      VehicleTwo4_Idle_5x16_58: 418054176
+      VehicleTwo4_Idle_5x16_59: -1438727909
+      VehicleTwo4_Idle_5x16_6: -2065301212
+      VehicleTwo4_Idle_5x16_60: 1842646831
+      VehicleTwo4_Idle_5x16_61: 2047349473
+      VehicleTwo4_Idle_5x16_62: 2049131056
+      VehicleTwo4_Idle_5x16_63: 1272602506
+      VehicleTwo4_Idle_5x16_64: 1940671353
+      VehicleTwo4_Idle_5x16_65: -335575546
+      VehicleTwo4_Idle_5x16_66: -152674803
+      VehicleTwo4_Idle_5x16_67: -1033653192
+      VehicleTwo4_Idle_5x16_68: -568516523
+      VehicleTwo4_Idle_5x16_69: 568390477
+      VehicleTwo4_Idle_5x16_7: 1574008074
+      VehicleTwo4_Idle_5x16_70: 519862892
+      VehicleTwo4_Idle_5x16_71: 1509275699
+      VehicleTwo4_Idle_5x16_72: -461852931
+      VehicleTwo4_Idle_5x16_73: 318147094
+      VehicleTwo4_Idle_5x16_74: 1658647601
+      VehicleTwo4_Idle_5x16_75: -820491428
+      VehicleTwo4_Idle_5x16_76: -784507641
+      VehicleTwo4_Idle_5x16_77: 2020632965
+      VehicleTwo4_Idle_5x16_78: 54078233
+      VehicleTwo4_Idle_5x16_79: 1600153154
+      VehicleTwo4_Idle_5x16_8: -249560624
+      VehicleTwo4_Idle_5x16_9: -1241575967
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
