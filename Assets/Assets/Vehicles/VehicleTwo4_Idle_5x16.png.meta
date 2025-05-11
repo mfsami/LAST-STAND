@@ -113,10 +113,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 7788
-        width: 140
-        height: 268
+        x: 0
+        y: 7680
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_1
       rect:
         serializedVersion: 2
-        x: 692
-        y: 7788
-        width: 140
-        height: 268
+        x: 512
+        y: 7680
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_2
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 7788
-        width: 140
-        height: 268
+        x: 1024
+        y: 7680
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_3
       rect:
         serializedVersion: 2
-        x: 1716
-        y: 7788
-        width: 140
-        height: 268
+        x: 1536
+        y: 7680
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_4
       rect:
         serializedVersion: 2
-        x: 2228
-        y: 7788
-        width: 140
-        height: 268
+        x: 2048
+        y: 7680
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_5
       rect:
         serializedVersion: 2
-        x: 76
-        y: 7336
-        width: 340
-        height: 140
+        x: 0
+        y: 7168
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_6
       rect:
         serializedVersion: 2
-        x: 588
-        y: 7336
-        width: 340
-        height: 140
+        x: 512
+        y: 7168
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_7
       rect:
         serializedVersion: 2
-        x: 1100
-        y: 7336
-        width: 340
-        height: 140
+        x: 1024
+        y: 7168
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_8
       rect:
         serializedVersion: 2
-        x: 1612
-        y: 7336
-        width: 340
-        height: 140
+        x: 1536
+        y: 7168
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_9
       rect:
         serializedVersion: 2
-        x: 2124
-        y: 7336
-        width: 340
-        height: 140
+        x: 2048
+        y: 7168
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_10
       rect:
         serializedVersion: 2
-        x: 84
-        y: 6824
-        width: 340
-        height: 140
+        x: 0
+        y: 6656
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_11
       rect:
         serializedVersion: 2
-        x: 596
-        y: 6824
-        width: 340
-        height: 140
+        x: 512
+        y: 6656
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,10 +365,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_12
       rect:
         serializedVersion: 2
-        x: 1108
-        y: 6824
-        width: 340
-        height: 140
+        x: 1024
+        y: 6656
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,10 +386,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_13
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 6824
-        width: 340
-        height: 140
+        x: 1536
+        y: 6656
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,10 +407,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_14
       rect:
         serializedVersion: 2
-        x: 2132
-        y: 6824
-        width: 340
-        height: 140
+        x: 2048
+        y: 6656
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,10 +428,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_15
       rect:
         serializedVersion: 2
-        x: 180
-        y: 6252
-        width: 140
-        height: 268
+        x: 0
+        y: 6144
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,10 +449,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_16
       rect:
         serializedVersion: 2
-        x: 692
-        y: 6252
-        width: 140
-        height: 268
+        x: 512
+        y: 6144
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +470,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_17
       rect:
         serializedVersion: 2
-        x: 1204
-        y: 6252
-        width: 140
-        height: 268
+        x: 1024
+        y: 6144
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,10 +491,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_18
       rect:
         serializedVersion: 2
-        x: 1716
-        y: 6252
-        width: 140
-        height: 268
+        x: 1536
+        y: 6144
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,10 +512,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_19
       rect:
         serializedVersion: 2
-        x: 2228
-        y: 6252
-        width: 140
-        height: 268
+        x: 2048
+        y: 6144
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,10 +533,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_20
       rect:
         serializedVersion: 2
-        x: 100
-        y: 5752
-        width: 296
-        height: 236
+        x: 0
+        y: 5632
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,10 +554,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_21
       rect:
         serializedVersion: 2
-        x: 612
-        y: 5752
-        width: 296
-        height: 236
+        x: 512
+        y: 5632
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,10 +575,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_22
       rect:
         serializedVersion: 2
-        x: 1124
-        y: 5752
-        width: 296
-        height: 236
+        x: 1024
+        y: 5632
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,10 +596,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_23
       rect:
         serializedVersion: 2
-        x: 1636
-        y: 5752
-        width: 296
-        height: 236
+        x: 1536
+        y: 5632
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,10 +617,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_24
       rect:
         serializedVersion: 2
-        x: 2148
-        y: 5752
-        width: 296
-        height: 236
+        x: 2048
+        y: 5632
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,10 +638,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_25
       rect:
         serializedVersion: 2
-        x: 100
-        y: 5240
-        width: 296
-        height: 228
+        x: 0
+        y: 5120
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -659,10 +659,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_26
       rect:
         serializedVersion: 2
-        x: 612
-        y: 5240
-        width: 296
-        height: 228
+        x: 512
+        y: 5120
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -680,10 +680,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_27
       rect:
         serializedVersion: 2
-        x: 1124
-        y: 5240
-        width: 296
-        height: 228
+        x: 1024
+        y: 5120
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -701,10 +701,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_28
       rect:
         serializedVersion: 2
-        x: 1636
-        y: 5240
-        width: 296
-        height: 228
+        x: 1536
+        y: 5120
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,10 +722,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_29
       rect:
         serializedVersion: 2
-        x: 2148
-        y: 5240
-        width: 296
-        height: 228
+        x: 2048
+        y: 5120
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -743,10 +743,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_30
       rect:
         serializedVersion: 2
-        x: 100
-        y: 4728
-        width: 296
-        height: 236
+        x: 0
+        y: 4608
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -764,10 +764,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_31
       rect:
         serializedVersion: 2
-        x: 612
-        y: 4728
-        width: 296
-        height: 236
+        x: 512
+        y: 4608
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -785,10 +785,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_32
       rect:
         serializedVersion: 2
-        x: 1124
-        y: 4728
-        width: 296
-        height: 236
+        x: 1024
+        y: 4608
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -806,10 +806,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_33
       rect:
         serializedVersion: 2
-        x: 1636
-        y: 4728
-        width: 296
-        height: 236
+        x: 1536
+        y: 4608
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -827,10 +827,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_34
       rect:
         serializedVersion: 2
-        x: 2148
-        y: 4728
-        width: 296
-        height: 236
+        x: 2048
+        y: 4608
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -848,10 +848,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_35
       rect:
         serializedVersion: 2
-        x: 100
-        y: 4216
-        width: 296
-        height: 228
+        x: 0
+        y: 4096
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -869,10 +869,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_36
       rect:
         serializedVersion: 2
-        x: 612
-        y: 4216
-        width: 296
-        height: 228
+        x: 512
+        y: 4096
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -890,10 +890,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_37
       rect:
         serializedVersion: 2
-        x: 1124
-        y: 4216
-        width: 296
-        height: 228
+        x: 1024
+        y: 4096
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -911,10 +911,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_38
       rect:
         serializedVersion: 2
-        x: 1636
-        y: 4216
-        width: 296
-        height: 228
+        x: 1536
+        y: 4096
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -932,10 +932,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_39
       rect:
         serializedVersion: 2
-        x: 2148
-        y: 4216
-        width: 296
-        height: 228
+        x: 2048
+        y: 4096
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -953,10 +953,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_40
       rect:
         serializedVersion: 2
-        x: 136
-        y: 3692
-        width: 228
-        height: 260
+        x: 0
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -974,10 +974,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_41
       rect:
         serializedVersion: 2
-        x: 648
-        y: 3692
-        width: 228
-        height: 260
+        x: 512
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -995,10 +995,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_42
       rect:
         serializedVersion: 2
-        x: 1160
-        y: 3692
-        width: 228
-        height: 260
+        x: 1024
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1016,10 +1016,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_43
       rect:
         serializedVersion: 2
-        x: 1672
-        y: 3692
-        width: 228
-        height: 260
+        x: 1536
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1037,10 +1037,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_44
       rect:
         serializedVersion: 2
-        x: 2184
-        y: 3692
-        width: 228
-        height: 260
+        x: 2048
+        y: 3584
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1058,10 +1058,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_45
       rect:
         serializedVersion: 2
-        x: 84
-        y: 3212
-        width: 328
-        height: 192
+        x: 0
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1079,10 +1079,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_46
       rect:
         serializedVersion: 2
-        x: 596
-        y: 3212
-        width: 328
-        height: 192
+        x: 512
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1100,10 +1100,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_47
       rect:
         serializedVersion: 2
-        x: 1108
-        y: 3212
-        width: 328
-        height: 192
+        x: 1024
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1121,10 +1121,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_48
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 3212
-        width: 328
-        height: 192
+        x: 1536
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1142,10 +1142,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_49
       rect:
         serializedVersion: 2
-        x: 2132
-        y: 3216
-        width: 328
-        height: 188
+        x: 2048
+        y: 3072
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1163,10 +1163,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_50
       rect:
         serializedVersion: 2
-        x: 84
-        y: 2704
-        width: 328
-        height: 180
+        x: 0
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1184,10 +1184,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_51
       rect:
         serializedVersion: 2
-        x: 596
-        y: 2704
-        width: 328
-        height: 180
+        x: 512
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1205,10 +1205,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_52
       rect:
         serializedVersion: 2
-        x: 1108
-        y: 2704
-        width: 328
-        height: 180
+        x: 1024
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1226,10 +1226,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_53
       rect:
         serializedVersion: 2
-        x: 1620
-        y: 2704
-        width: 328
-        height: 180
+        x: 1536
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1247,10 +1247,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_54
       rect:
         serializedVersion: 2
-        x: 2132
-        y: 2704
-        width: 328
-        height: 180
+        x: 2048
+        y: 2560
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1268,10 +1268,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_55
       rect:
         serializedVersion: 2
-        x: 136
-        y: 2160
-        width: 228
-        height: 256
+        x: 0
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1289,10 +1289,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_56
       rect:
         serializedVersion: 2
-        x: 648
-        y: 2160
-        width: 228
-        height: 256
+        x: 512
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1310,10 +1310,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_57
       rect:
         serializedVersion: 2
-        x: 1160
-        y: 2160
-        width: 228
-        height: 256
+        x: 1024
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1331,10 +1331,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_58
       rect:
         serializedVersion: 2
-        x: 1672
-        y: 2160
-        width: 228
-        height: 256
+        x: 1536
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1352,10 +1352,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_59
       rect:
         serializedVersion: 2
-        x: 2184
-        y: 2160
-        width: 228
-        height: 256
+        x: 2048
+        y: 2048
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1373,10 +1373,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_60
       rect:
         serializedVersion: 2
-        x: 136
-        y: 1648
-        width: 224
-        height: 256
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1394,10 +1394,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_61
       rect:
         serializedVersion: 2
-        x: 648
-        y: 1648
-        width: 224
-        height: 256
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1415,10 +1415,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_62
       rect:
         serializedVersion: 2
-        x: 1160
-        y: 1648
-        width: 224
-        height: 256
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1436,10 +1436,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_63
       rect:
         serializedVersion: 2
-        x: 1672
-        y: 1648
-        width: 224
-        height: 256
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1457,10 +1457,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_64
       rect:
         serializedVersion: 2
-        x: 2184
-        y: 1648
-        width: 224
-        height: 256
+        x: 2048
+        y: 1536
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1478,10 +1478,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_65
       rect:
         serializedVersion: 2
-        x: 88
-        y: 1168
-        width: 328
-        height: 180
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1499,10 +1499,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_66
       rect:
         serializedVersion: 2
-        x: 600
-        y: 1168
-        width: 328
-        height: 180
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1520,10 +1520,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_67
       rect:
         serializedVersion: 2
-        x: 1112
-        y: 1168
-        width: 328
-        height: 180
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1541,10 +1541,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_68
       rect:
         serializedVersion: 2
-        x: 1624
-        y: 1168
-        width: 328
-        height: 180
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1562,10 +1562,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_69
       rect:
         serializedVersion: 2
-        x: 2136
-        y: 1168
-        width: 328
-        height: 180
+        x: 2048
+        y: 1024
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1583,10 +1583,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_70
       rect:
         serializedVersion: 2
-        x: 88
-        y: 652
-        width: 328
-        height: 192
+        x: 0
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1604,10 +1604,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_71
       rect:
         serializedVersion: 2
-        x: 600
-        y: 652
-        width: 328
-        height: 192
+        x: 512
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1625,10 +1625,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_72
       rect:
         serializedVersion: 2
-        x: 1112
-        y: 652
-        width: 324
-        height: 192
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1646,10 +1646,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_73
       rect:
         serializedVersion: 2
-        x: 1624
-        y: 652
-        width: 328
-        height: 192
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1667,10 +1667,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_74
       rect:
         serializedVersion: 2
-        x: 2136
-        y: 656
-        width: 328
-        height: 188
+        x: 2048
+        y: 512
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1688,10 +1688,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_75
       rect:
         serializedVersion: 2
-        x: 136
-        y: 108
-        width: 224
-        height: 260
+        x: 0
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1709,10 +1709,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_76
       rect:
         serializedVersion: 2
-        x: 648
-        y: 108
-        width: 224
-        height: 260
+        x: 512
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1730,10 +1730,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_77
       rect:
         serializedVersion: 2
-        x: 1160
-        y: 108
-        width: 224
-        height: 260
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1751,10 +1751,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_78
       rect:
         serializedVersion: 2
-        x: 1672
-        y: 108
-        width: 224
-        height: 260
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1772,10 +1772,10 @@ TextureImporter:
       name: VehicleTwo4_Idle_5x16_79
       rect:
         serializedVersion: 2
-        x: 2184
-        y: 108
-        width: 224
-        height: 260
+        x: 2048
+        y: 0
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
