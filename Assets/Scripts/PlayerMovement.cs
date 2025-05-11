@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 movement;
     private Animator animator;
-    private string currentState = ""; // to avoid replaying same animation
+    private string currentState = "";
+    private string lastMoveDirection = "Down"; // Tracks last movement for idle
 
     void Start()
     {
@@ -18,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        // Get raw input and normalize it
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         movement = new Vector2(moveX, moveY).normalized;
@@ -26,11 +26,12 @@ public class PlayerMovement : MonoBehaviour
         if (movement != Vector2.zero)
         {
             string direction = GetDirectionName(movement);
+            lastMoveDirection = direction;
             PlayAnimation("Drive_" + direction);
         }
         else
         {
-            PlayAnimation("Idle_Down"); // default idle
+            PlayAnimation("Idle_" + lastMoveDirection);
         }
     }
 
@@ -41,15 +42,27 @@ public class PlayerMovement : MonoBehaviour
 
     string GetDirectionName(Vector2 dir)
     {
-        if (Mathf.Abs(dir.x) > Mathf.Abs(dir.y))
-        {
-            return dir.x > 0 ? "Right" : "Left";
-        }
-        else
-        {
-            return dir.y > 0 ? "Up" : "Down";
-        }
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        angle = (angle + 360f) % 360f; // Normalize to 0–360
+
+        if (angle >= 348.75f || angle < 11.25f) return "Right";
+        if (angle >= 11.25f && angle < 33.75f) return "Q4_1";
+        if (angle >= 33.75f && angle < 56.25f) return "Q4_2";
+        if (angle >= 56.25f && angle < 78.75f) return "Q4_3";
+        if (angle >= 78.75f && angle < 101.25f) return "Down";
+        if (angle >= 101.25f && angle < 123.75f) return "Q3_1";
+        if (angle >= 123.75f && angle < 146.25f) return "Q3_2";
+        if (angle >= 146.25f && angle < 168.75f) return "Q3_3";
+        if (angle >= 168.75f && angle < 191.25f) return "Left";
+        if (angle >= 191.25f && angle < 213.75f) return "Q1_1";
+        if (angle >= 213.75f && angle < 236.25f) return "Q1_2";
+        if (angle >= 236.25f && angle < 258.75f) return "Q1_3";
+        if (angle >= 258.75f && angle < 281.25f) return "Up";
+        if (angle >= 281.25f && angle < 303.75f) return "Q2_1";
+        if (angle >= 303.75f && angle < 326.25f) return "Q2_2";
+        return "Q2_3";
     }
+
 
     void PlayAnimation(string newState)
     {
