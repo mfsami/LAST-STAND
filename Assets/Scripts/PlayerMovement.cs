@@ -1,4 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
@@ -21,15 +24,23 @@ public class PlayerMovement : MonoBehaviour
     {
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
-        movement = new Vector2(moveX, moveY).normalized;
 
-        if (movement != Vector2.zero)
+        Vector2 input = new Vector2(moveX, moveY);
+
+        if (input.magnitude < 0.1f)
         {
+            movement = Vector2.zero;
+        }
+        else
+        {
+            movement = input.normalized;
+
             string direction = GetDirectionName(movement);
             lastMoveDirection = direction;
             PlayAnimation("Drive_" + direction);
         }
-        else
+
+        if (movement == Vector2.zero)
         {
             PlayAnimation("Idle_" + lastMoveDirection);
         }
