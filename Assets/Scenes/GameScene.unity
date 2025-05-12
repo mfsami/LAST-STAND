@@ -72444,7 +72444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceleration: 20
-  maxSpeed: 7
+  maxSpeed: 9
   friction: 20
 --- !u!95 &1852071021
 Animator:
