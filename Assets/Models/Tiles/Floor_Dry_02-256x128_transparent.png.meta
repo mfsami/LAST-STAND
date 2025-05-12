@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c45659afc5c008a42950e5c3a41656b7
+guid: 23bada66d41b9b84f99bde7f00e0a14e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,10 +45,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 256
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_0
+      name: Floor_Dry_02-256x128_transparent_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 986d2b3266bfdb04ea3094917390482e
-      internalID: -1323834190
+      spriteID: b1ef3c0b72871af4eabfbae9cc1848f6
+      internalID: -295370126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_1
+      name: Floor_Dry_02-256x128_transparent_1
       rect:
         serializedVersion: 2
         x: 256
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9cdd4361c2589640b3d605daa2056eb
-      internalID: -351291272
+      spriteID: 4d169880cc9b10846ba5858bb6c4c0b9
+      internalID: -1460408787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_2
+      name: Floor_Dry_02-256x128_transparent_2
       rect:
         serializedVersion: 2
         x: 512
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f8fd6d4dd60c8c45ac95e4672b2be7d
-      internalID: -1219679117
+      spriteID: 8043b76ef04e95e44b6d6ccb37469088
+      internalID: 1665739824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_3
+      name: Floor_Dry_02-256x128_transparent_3
       rect:
         serializedVersion: 2
         x: 0
@@ -187,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0091264dc7cdcbd41b5c67fdf5be5962
-      internalID: -879746298
+      spriteID: 4a3441ca4904c35449e334a5f65ce0fe
+      internalID: -344595669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_4
+      name: Floor_Dry_02-256x128_transparent_4
       rect:
         serializedVersion: 2
         x: 256
@@ -208,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e714ed8b337fd34e856af535351ea0f
-      internalID: -536577533
+      spriteID: c1b8941f12fd01a4a8c2b84257f56f0d
+      internalID: -837133454
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_5
+      name: Floor_Dry_02-256x128_transparent_5
       rect:
         serializedVersion: 2
         x: 512
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c56c2ef589263d40838cd697cc9f9d1
-      internalID: 1574312394
+      spriteID: a458ee77df9d6d741a374463e1676b73
+      internalID: 1405451764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_6
+      name: Floor_Dry_02-256x128_transparent_6
       rect:
         serializedVersion: 2
         x: 0
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88d45db662048544586b206f2cef9144
-      internalID: -1787896299
+      spriteID: 9cd8fab94523ec04e85fd426e06ae158
+      internalID: -931801463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_7
+      name: Floor_Dry_02-256x128_transparent_7
       rect:
         serializedVersion: 2
         x: 256
@@ -271,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45a1c852fd5494942bb49eca3c85ee35
-      internalID: 1932944714
+      spriteID: 47f8617fd23654b40bf2c98171ef007b
+      internalID: 1983429846
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_8
+      name: Floor_Dry_02-256x128_transparent_8
       rect:
         serializedVersion: 2
         x: 512
@@ -292,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0f7238f53a5ad64f854546f94be46a6
-      internalID: 1644568513
+      spriteID: 7b22b9d9386f70c4886c8c5aff535f30
+      internalID: -1069820833
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_9
+      name: Floor_Dry_02-256x128_transparent_9
       rect:
         serializedVersion: 2
         x: 0
@@ -313,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a583785a2f9349649ae760a3ee55129f
-      internalID: 1492499675
+      spriteID: 3c1c6d75eda3bcb4fa0f70fcc8e9afba
+      internalID: 706858830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_10
+      name: Floor_Dry_02-256x128_transparent_10
       rect:
         serializedVersion: 2
         x: 256
@@ -334,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b45dd47169c56574790b777f33a3e65b
-      internalID: -935377191
+      spriteID: e3af27724cf62ab4382f9d0db7be1f0d
+      internalID: -1416566690
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_11
+      name: Floor_Dry_02-256x128_transparent_11
       rect:
         serializedVersion: 2
         x: 512
@@ -355,14 +355,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4bdc6c0f2ebb1cd41bfd79df0a69be66
-      internalID: 152250259
+      spriteID: 3d4e83dc04d91c6418d185812320cbde
+      internalID: 2135764144
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_12
+      name: Floor_Dry_02-256x128_transparent_12
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +376,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a784abc0842903b4c9c6a109a11eef98
-      internalID: -1545043764
+      spriteID: 4d2a24b675f8d874c9f755f9750a576a
+      internalID: -420848456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_13
+      name: Floor_Dry_02-256x128_transparent_13
       rect:
         serializedVersion: 2
         x: 256
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f92744b2ec7afa4bb4386a8ae06f412
-      internalID: 2031515
+      spriteID: 9be10eb1bbc37694495460b1f261b1b3
+      internalID: 1392905477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_14
+      name: Floor_Dry_02-256x128_transparent_14
       rect:
         serializedVersion: 2
         x: 512
@@ -418,14 +418,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9dc176f673f630449c257c47f927346
-      internalID: -1703542116
+      spriteID: 86a9bb861c8f849469f7efacbaf2b03c
+      internalID: -2020613204
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_15
+      name: Floor_Dry_02-256x128_transparent_15
       rect:
         serializedVersion: 2
         x: 0
@@ -439,14 +439,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 217444290231f4c4c96be5d95c6159a2
-      internalID: 1516995203
+      spriteID: 65c441df71a3c4d46a32d836d870828f
+      internalID: 437026170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_16
+      name: Floor_Dry_02-256x128_transparent_16
       rect:
         serializedVersion: 2
         x: 256
@@ -460,14 +460,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8148a770c79bf204ca82680dbad3e26c
-      internalID: -1961523629
+      spriteID: 03b4573a9965f8e41aa5bd6a7a868c16
+      internalID: 1535135939
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floor_Wood_01_Cleaned_17
+      name: Floor_Dry_02-256x128_transparent_17
       rect:
         serializedVersion: 2
         x: 512
@@ -481,8 +481,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 618b18bb8ff14314596ffbb0a23079cd
-      internalID: -2008075947
+      spriteID: 995750ebcec052c4b861b069a177ac41
+      internalID: 136483868
       vertices: []
       indices: 
       edges: []
@@ -498,24 +498,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Floor_Wood_01_Cleaned_0: -1323834190
-      Floor_Wood_01_Cleaned_1: -351291272
-      Floor_Wood_01_Cleaned_10: -935377191
-      Floor_Wood_01_Cleaned_11: 152250259
-      Floor_Wood_01_Cleaned_12: -1545043764
-      Floor_Wood_01_Cleaned_13: 2031515
-      Floor_Wood_01_Cleaned_14: -1703542116
-      Floor_Wood_01_Cleaned_15: 1516995203
-      Floor_Wood_01_Cleaned_16: -1961523629
-      Floor_Wood_01_Cleaned_17: -2008075947
-      Floor_Wood_01_Cleaned_2: -1219679117
-      Floor_Wood_01_Cleaned_3: -879746298
-      Floor_Wood_01_Cleaned_4: -536577533
-      Floor_Wood_01_Cleaned_5: 1574312394
-      Floor_Wood_01_Cleaned_6: -1787896299
-      Floor_Wood_01_Cleaned_7: 1932944714
-      Floor_Wood_01_Cleaned_8: 1644568513
-      Floor_Wood_01_Cleaned_9: 1492499675
+      Floor_Dry_02-256x128_transparent_0: -295370126
+      Floor_Dry_02-256x128_transparent_1: -1460408787
+      Floor_Dry_02-256x128_transparent_10: -1416566690
+      Floor_Dry_02-256x128_transparent_11: 2135764144
+      Floor_Dry_02-256x128_transparent_12: -420848456
+      Floor_Dry_02-256x128_transparent_13: 1392905477
+      Floor_Dry_02-256x128_transparent_14: -2020613204
+      Floor_Dry_02-256x128_transparent_15: 437026170
+      Floor_Dry_02-256x128_transparent_16: 1535135939
+      Floor_Dry_02-256x128_transparent_17: 136483868
+      Floor_Dry_02-256x128_transparent_2: 1665739824
+      Floor_Dry_02-256x128_transparent_3: -344595669
+      Floor_Dry_02-256x128_transparent_4: -837133454
+      Floor_Dry_02-256x128_transparent_5: 1405451764
+      Floor_Dry_02-256x128_transparent_6: -931801463
+      Floor_Dry_02-256x128_transparent_7: 1983429846
+      Floor_Dry_02-256x128_transparent_8: -1069820833
+      Floor_Dry_02-256x128_transparent_9: 706858830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

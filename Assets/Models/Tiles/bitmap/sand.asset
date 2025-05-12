@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: Floor_Wood_01_Cleaned_6
+  m_Name: sand
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1787896299, guid: c45659afc5c008a42950e5c3a41656b7, type: 3}
+  m_Sprite: {fileID: -1641707795, guid: 1c50fc1f4feadb048b1a5a300f5effc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
