@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float acceleration = 20f;
-    public float maxSpeed = 9f;
+    public float maxSpeed = 5f;
     public float friction = 20f;
 
     private Rigidbody2D rb;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CrosshairCursor : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float pixelsPerUnit = 256f;
     void Awake()
     {
         
@@ -14,8 +14,13 @@ public class CrosshairCursor : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        Vector2 mouseCursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        
+        Vector3 mouseCursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mouseCursorPos.z = 0;
+
+        float snap = 1f / pixelsPerUnit;
+        mouseCursorPos.x = Mathf.Round(mouseCursorPos.x / snap) * snap;
+        mouseCursorPos.y = Mathf.Round(mouseCursorPos.y / snap) * snap;
+
         transform.position = mouseCursorPos;
     }
 }
