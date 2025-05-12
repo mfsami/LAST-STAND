@@ -9,11 +9,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float displacementMultiplier = 0.3f;
     private float zPosition = -10f;
 
-    private void Start()
-    {
-        Cursor.visible = false;
-        
-    }
+   
 
 
     private void Update()
