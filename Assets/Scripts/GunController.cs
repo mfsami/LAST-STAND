@@ -6,19 +6,30 @@ public class GunController : MonoBehaviour
 {
 
     public GameObject bulletPrefab;
+    public float fireRate = 0.1f; // bullets per second (0.1 = 10 per sec)
+    public Transform firePoint;   // where the bullet spawns
+
+    private float fireTimer = 0f;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        fireTimer += Time.deltaTime;
+
+        if (Input.GetMouseButton(0) && fireTimer >= fireRate)
         {
             Shoot();
+            fireTimer = 0f;
         }
+
+        
     }
 
     void Shoot()
     {
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-        Vector2 dir = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position);
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 dir = mouseWorldPos - firePoint.position;
+
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
         bullet.GetComponent<Bullet>().SetDirection(dir);
     }
 }
