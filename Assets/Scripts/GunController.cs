@@ -9,6 +9,7 @@ public class GunController : MonoBehaviour
     public float spreadAmount = 5f; // degrees
     public LineRenderer linePrefab; // assign a dashed or custom material line
     public Transform firePoint;
+    public int dmgDealt = 2;
 
     private float fireTimer;
 
@@ -41,7 +42,15 @@ public class GunController : MonoBehaviour
         if (hit.collider != null)
         {
             endPoint = hit.point;
-            // Optionally: hit.collider.GetComponent<Enemy>()?.TakeDamage();
+
+            if (hit.collider.CompareTag("Enemy"))
+            {
+                Enemy enemy = hit.collider.GetComponent<Enemy>();
+                if (enemy != null)
+                {
+                    enemy.TakeDamage(dmgDealt);
+                }
+            }
         }
 
         
