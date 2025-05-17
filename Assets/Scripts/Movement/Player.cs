@@ -6,10 +6,15 @@ public class Player : MonoBehaviour
 {
     public float speed = 5f;
     private Rigidbody2D rb;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
+
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -29,5 +34,18 @@ public class Player : MonoBehaviour
         Vector2 move = new Vector2(moveX, moveY).normalized;
 
         rb.velocity = move * speed;
+
+        animator.SetFloat("Horizontal", moveX);
+        animator.SetFloat("Vertical", moveY);
+
+        // Flip sprite based on left and right since same anim
+        if (moveX > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (moveX < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
     }
 }
