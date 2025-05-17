@@ -20,10 +20,10 @@ public class CameraController : MonoBehaviour
         Vector3 finalCameraPosition = playerTransform.position + cameraDisplacement;
         finalCameraPosition.z = zPosition;
 
-        
-        float snap = 1f / pixelsPerUnit;
-        finalCameraPosition.x = Mathf.Round(finalCameraPosition.x / snap) * snap;
-        finalCameraPosition.y = Mathf.Round(finalCameraPosition.y / snap) * snap;
+
+        finalCameraPosition.x = Mathf.Round(finalCameraPosition.x * pixelsPerUnit) / pixelsPerUnit;
+        finalCameraPosition.y = Mathf.Round(finalCameraPosition.y * pixelsPerUnit) / pixelsPerUnit;
+
 
         transform.position = finalCameraPosition;
     }

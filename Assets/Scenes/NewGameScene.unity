@@ -1440,6 +1440,7 @@ GameObject:
   - component: {fileID: 732843950}
   - component: {fileID: 732843953}
   - component: {fileID: 732843955}
+  - component: {fileID: 732843956}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1490,7 +1491,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.21
+  orthographic size: 5.625
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1579,7 +1580,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 63749044}
   displacementMultiplier: 0.18
-  pixelsPerUnit: 100
+  pixelsPerUnit: 16
+--- !u!114 &732843956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732843949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 1
+  m_AssetsPPU: 16
+  m_RefResolutionX: 320
+  m_RefResolutionY: 180
+  m_CropFrame: 0
+  m_GridSnapping: 0
+  m_FilterMode: 0
+  m_UpscaleRT: 0
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &853646569
 GameObject:
   m_ObjectHideFlags: 0
@@ -12117,8 +12142,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.118146, y: -2.3712244, z: 0.031275205}
-  m_LocalScale: {x: 1.69, y: 1.69, z: 1.69}
-  m_ConstrainProportionsScale: 1
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12163,12 +12188,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 13
-  m_Sprite: {fileID: 21300000, guid: 6c22a1e0622356f4fa1bb6aadf6579c2, type: 3}
+  m_Sprite: {fileID: 603478957, guid: 98aaa5089e2abc14f809fb83e756700a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 9, y: 9}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
