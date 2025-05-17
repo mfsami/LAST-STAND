@@ -1,0 +1,95 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GunController : MonoBehaviour
+{
+
+    [Header("Bullet Settings")]
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+
+    public float fireRate = 0.2f;
+    public float bulletSpeed = 50f;
+
+    private float fireCooldown = 0f;
+
+    [Header("Gun Shake Settings")]
+    public float duration = 1f;
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        LAMouse();
+
+        fireCooldown -= Time.deltaTime;
+
+        if (Input.GetMouseButton(0) && fireCooldown <= 0f)
+        {
+            Shoot();
+            GunShake();
+            fireCooldown = fireRate;
+        }
+    }
+
+    private void LAMouse()
+    {
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 direction = mousePos - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+
+        // Flip gun sprite if mouse is to the left of gun (less) 
+
+        Vector3 scale = transform.localScale;
+
+        if (mousePos.x < transform.position.x)
+        {
+            scale.y = -Mathf.Abs(scale.y);
+        }
+        else
+        {
+            scale.y = Mathf.Abs(scale.y);
+        }
+
+        transform.localScale = scale;
+        
+
+    }
+
+    private void Shoot()
+    {
+        // Get mouse position
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        // Direction vector from guns gunpoint to mouse
+        // Subtarcting positions gives vector pointing from gun to mouse
+        // normalize to remove distance, we only need direction
+        Vector3 direction = (mousePos - firePoint.position).normalized;
+
+        // Calculate rotation angle based on direction
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        Quaternion rotation = Quaternion.Euler(0f, 0f, angle);
+
+        // Spawns bullet at firepoint
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, rotation);
+
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+
+        if (rb != null)
+        {
+            rb.velocity = direction * bulletSpeed;
+        }
+    }
+
+    private void GunShake()
+    {
+
+    }
+
+
+
+   
+}
