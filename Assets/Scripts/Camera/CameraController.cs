@@ -6,9 +6,11 @@ public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float displacementMultiplier = 0.3f;
-    [SerializeField] private float pixelsPerUnit = 256f;
+    [SerializeField] private float pixelsPerUnit = 16f;
 
     private float zPosition = -10f;
+
+    
 
     private void LateUpdate()
     {
