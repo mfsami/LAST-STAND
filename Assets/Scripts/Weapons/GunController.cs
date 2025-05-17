@@ -15,7 +15,15 @@ public class GunController : MonoBehaviour
     private float fireCooldown = 0f;
 
     [Header("Gun Shake Settings")]
-    public float duration = 1f;
+    private Vector3 originPos;
+    public float shakeDuration = 0.2f;
+    public float shakeAmount = 0.07f;
+    public float shakeTimer = 0f;
+
+    private void Start()
+    {
+        originPos = transform.localPosition;
+    }
 
 
     // Update is called once per frame
@@ -30,7 +38,9 @@ public class GunController : MonoBehaviour
             Shoot();
             GunShake();
             fireCooldown = fireRate;
+            shakeTimer = shakeDuration;
         }
+        GunShake();
     }
 
     private void LAMouse()
@@ -86,7 +96,17 @@ public class GunController : MonoBehaviour
 
     private void GunShake()
     {
+        if (shakeTimer > 0)
+        {
+            transform.localPosition = originPos + (Vector3)(Random.insideUnitCircle * shakeAmount);
+            shakeTimer -= Time.deltaTime;
 
+            if (shakeTimer <= 0)
+            {
+                // Reset back to default
+                transform.localPosition = originPos;
+            }
+        }
     }
 
 

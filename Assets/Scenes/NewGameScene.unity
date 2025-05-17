@@ -1686,6 +1686,9 @@ MonoBehaviour:
   firePoint: {fileID: 670209253}
   fireRate: 0.2
   bulletSpeed: 50
+  shakeDuration: 0.2
+  shakeAmount: 0.07
+  shakeTimer: 0
 --- !u!212 &853646572
 SpriteRenderer:
   m_ObjectHideFlags: 0
