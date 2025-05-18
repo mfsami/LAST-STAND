@@ -8,10 +8,8 @@ public class GunController : MonoBehaviour
     [Header("Bullet Settings")]
     public GameObject bulletPrefab;
     public Transform firePoint;
-
-    public float fireRate = 0.2f;
+    public float fireRate = 1.3f;
     public float bulletSpeed = 50f;
-
     private float fireCooldown = 0f;
 
     [Header("Gun Shake Settings")]

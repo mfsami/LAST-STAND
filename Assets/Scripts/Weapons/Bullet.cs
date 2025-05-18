@@ -4,18 +4,27 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    //public float bulletSpeed = 10f;
-    //private Vector2 direction;
 
-    //public void SetDirection(Vector2 dir)
-    //{
-    //    direction = dir.normalized;
-    //}
+    
+    public float dmgDealt = 10f;
 
-    //void Update()
-    //{
-    //    transform.position += (Vector3)(direction * bulletSpeed * Time.deltaTime);
-    //}
+    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            // Get enemy component from the object we hit
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+
+            if (enemy != null) 
+            { 
+                enemy.TakeDamage(dmgDealt);
+                Destroy(gameObject);
+            }
+
+        }
+    }
 
     private void OnBecameInvisible()
     {

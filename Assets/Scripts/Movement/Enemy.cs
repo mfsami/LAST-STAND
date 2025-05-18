@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int health = 20;
+    public float health = 20f;
 
-    public void TakeDamage(int dmgDealt)
+    public void TakeDamage(float dmgDealt)
     {
         health -= dmgDealt;
         Debug.Log("Enemy health :" + health);
