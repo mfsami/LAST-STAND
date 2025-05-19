@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         Movement();
     }

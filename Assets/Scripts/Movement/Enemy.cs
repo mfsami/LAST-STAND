@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
@@ -31,6 +32,35 @@ public class Enemy : MonoBehaviour
         health -= dmgDealt;
         Debug.Log("Enemy health :" + health);
 
+        // Check if more horizontal or vertical
+        // Here checks horizontal
+        if (Mathf.Abs(moveDir.x) > Mathf.Abs(moveDir.y))
+        {
+            if (moveDir.x > 0)
+            {
+                
+                animator.SetTrigger("ZombDmgRIGHT");
+
+            }
+            else
+            {
+                animator.SetTrigger("ZombDmgLEFT");
+            }
+        }
+        else
+        {
+            if (moveDir.y > 0)
+            {
+                animator.SetTrigger("ZombDmgUP");
+            }
+
+            else
+            {
+                animator.SetTrigger("ZombDmgDOWN");
+            }
+        }
+        
+        
         if (health <= 0)
         {
             Die();
