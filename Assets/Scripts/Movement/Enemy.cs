@@ -106,6 +106,11 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        animator.SetTrigger("BloodSplat");
+        rb.velocity = Vector2.zero;
+        GetComponent<Collider2D>().enabled = false;
+        this.enabled = false;
+
+        //Destroy(gameObject);
     }
 }
