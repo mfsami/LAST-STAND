@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     public float speed = 5f;
 
     private float randomDirTimer = 0f;
-    private float randomDirDuration = 1f;
+    //private float randomDirDuration = 1f;
 
     Rigidbody2D rb;
 
@@ -26,8 +26,11 @@ public class Enemy : MonoBehaviour
 
         if (randomDirTimer <= 0)
         {
+            // Change direction
             RandomMovement();
-            randomDirTimer = randomDirDuration;
+
+            // Randomize rate at which direction is changed
+            randomDirTimer = Random.Range(1f, 5f);
         }
 
     }
