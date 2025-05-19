@@ -7,32 +7,23 @@ public class Enemy : MonoBehaviour
     public float health = 20f;
     public float speed = 5f;
 
-    private float randomDirTimer = 0f;
-    //private float randomDirDuration = 1f;
-
     Rigidbody2D rb;
-
     Vector2 randomDir;
+    Transform target;
+    Vector2 moveDir;
+
+    Animator animator;
+    SpriteRenderer spriteRenderer;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
 
-    private void Update()
-    {
-        
-        randomDirTimer -= Time.deltaTime;
+        // Identify Player in scene and reference transform values
+        target = GameObject.Find("Player").transform;
 
-        if (randomDirTimer <= 0)
-        {
-            // Change direction
-            RandomMovement();
-
-            // Randomize rate at which direction is changed
-            randomDirTimer = Random.Range(1f, 5f);
-        }
-
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void TakeDamage(float dmgDealt)
@@ -46,13 +37,41 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    
-
-    private void RandomMovement()
+    private void FixedUpdate()
     {
-        randomDir = (Random.insideUnitCircle).normalized;
-        rb.velocity = randomDir * speed;
+        FollowTarget();
+        HandleAnimations();
+    }
 
+
+    private void FollowTarget()
+    {
+        if (target)
+        {
+            // Calculates direction vector from enemy to player
+            Vector3 direction = (target.position - transform.position).normalized;
+            moveDir = direction;
+
+            // Assign velocity to enemy in that direction
+            rb.velocity = new Vector2(moveDir.x, moveDir.y) * speed;
+        }
+    }
+
+    private void HandleAnimations()
+    {
+        // Set animations based on direction
+        animator.SetFloat("Horizontal", moveDir.x);
+        animator.SetFloat("Vertical", moveDir.y);
+
+        // Flip since left and right uses same animation
+        if (moveDir.x > 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (moveDir.x < 0)
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 
     void Die()
