@@ -21,14 +21,14 @@ public class GunController : MonoBehaviour
     [Header("Orbit Player")]
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float orbitRadius = 1f;
-    
+
 
 
 
     private void Start()
     {
         originPos = transform.localPosition;
-        
+
     }
 
 
@@ -81,7 +81,7 @@ public class GunController : MonoBehaviour
         }
 
         transform.localScale = scale;
-        
+
 
     }
 

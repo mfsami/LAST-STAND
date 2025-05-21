@@ -1,31 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Camera))]
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private Transform playerTransform;
-    [SerializeField] private float displacementMultiplier = 0.3f;
-    [SerializeField] private float pixelsPerUnit = 16f;
-
-    private float zPosition = -10f;
-
-    
+    public Transform playerTransform;
+    public float pixelsPerUnit = 16f; // Same as Pixel Perfect Camera
 
     private void LateUpdate()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 cameraDisplacement = (mousePosition - playerTransform.position) * displacementMultiplier;
+        if (playerTransform == null) return;
 
-        Vector3 finalCameraPosition = playerTransform.position + cameraDisplacement;
-        finalCameraPosition.z = zPosition;
+        Vector3 targetPosition = playerTransform.position;
+        targetPosition.z = transform.position.z;
 
+        // Snap to pixel grid
+        Vector3 snappedPosition = new Vector3(
+            Mathf.Round(targetPosition.x * pixelsPerUnit) / pixelsPerUnit,
+            Mathf.Round(targetPosition.y * pixelsPerUnit) / pixelsPerUnit,
+            targetPosition.z
+        );
 
-        finalCameraPosition.x = Mathf.Round(finalCameraPosition.x * pixelsPerUnit) / pixelsPerUnit;
-        finalCameraPosition.y = Mathf.Round(finalCameraPosition.y * pixelsPerUnit) / pixelsPerUnit;
-
-
-        transform.position = finalCameraPosition;
+        transform.position = snappedPosition;
     }
 }
-
