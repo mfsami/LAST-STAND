@@ -48,4 +48,6 @@ public class Player : MonoBehaviour
             spriteRenderer.flipX = true;
         }
     }
+
+
 }

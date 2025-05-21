@@ -233,7 +233,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -1660,7 +1660,7 @@ MonoBehaviour:
   m_RefResolutionX: 320
   m_RefResolutionY: 180
   m_CropFrame: 0
-  m_GridSnapping: 0
+  m_GridSnapping: 1
   m_FilterMode: 0
   m_UpscaleRT: 0
   m_PixelSnapping: 0
@@ -1693,8 +1693,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853646569}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.507, y: -0.23, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.49, y: -0.35000002, z: 0}
   m_LocalScale: {x: 0.58, y: 0.58, z: 0.58}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1720,6 +1720,9 @@ MonoBehaviour:
   shakeDuration: 0.2
   shakeAmount: 0.07
   shakeTimer: 0
+  playerTransform: {fileID: 63749044}
+  orbitRadius: 0.7
+  minOrbitRadius: 3
 --- !u!212 &853646572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10884,7 +10887,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1239371175
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12410,6 +12413,9 @@ MonoBehaviour:
   shakeDuration: 0.2
   shakeAmount: 0.07
   shakeTimer: 0
+  playerTransform: {fileID: 0}
+  orbitRadius: 1
+  minOrbitRadius: 0.5
 --- !u!212 &1708442001
 SpriteRenderer:
   m_ObjectHideFlags: 0

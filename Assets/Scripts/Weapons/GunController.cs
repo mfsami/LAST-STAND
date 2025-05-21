@@ -18,9 +18,17 @@ public class GunController : MonoBehaviour
     public float shakeAmount = 0.07f;
     public float shakeTimer = 0f;
 
+    [Header("Orbit Player")]
+    [SerializeField] private Transform playerTransform;
+    [SerializeField] private float orbitRadius = 1f;
+    
+
+
+
     private void Start()
     {
         originPos = transform.localPosition;
+        
     }
 
 
@@ -28,6 +36,8 @@ public class GunController : MonoBehaviour
     void Update()
     {
         LAMouse();
+        Debug.DrawLine(playerTransform.position, transform.position, Color.red);
+
 
         fireCooldown -= Time.deltaTime;
 
@@ -44,9 +54,17 @@ public class GunController : MonoBehaviour
     private void LAMouse()
     {
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 direction = mousePos - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        mousePos.z = 0f;
 
+        // Get the direction from the player to the mouse
+        Vector3 fromPlayerToMouse = mousePos - playerTransform.position;
+        Vector3 direction = fromPlayerToMouse.sqrMagnitude < 0.01f ? Vector3.right : fromPlayerToMouse.normalized;
+
+        // Force the gun to always stay at the set orbit radius
+        transform.localPosition = direction * orbitRadius;
+
+        // Rotate to face mouse
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
         // Flip gun sprite if mouse is to the left of gun (less) 
@@ -96,18 +114,19 @@ public class GunController : MonoBehaviour
     {
         if (shakeTimer > 0)
         {
-            transform.localPosition = originPos + (Vector3)(Random.insideUnitCircle * shakeAmount);
+            Vector3 shakeOffset = (Vector3)(Random.insideUnitCircle * shakeAmount);
+            transform.position += shakeOffset;
             shakeTimer -= Time.deltaTime;
 
             if (shakeTimer <= 0)
             {
-                // Reset back to default
-                transform.localPosition = originPos;
+                // Let LAMouse() re-align next frame
             }
         }
     }
 
 
 
-   
+
+
 }
