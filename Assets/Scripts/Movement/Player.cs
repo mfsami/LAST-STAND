@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     void FixedUpdate()
     {
         Movement();
+        
     }
 
     private void Movement()
@@ -48,6 +50,18 @@ public class Player : MonoBehaviour
             spriteRenderer.flipX = true;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            Debug.Log("Coin collected");
+        }
+        
+    }
+    
+       
+    
 
 
 }
