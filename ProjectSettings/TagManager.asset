@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - Coin
+  - CopperCoin
+  - SilverCoin
+  - GoldCoin
   layers:
   - Default
   - TransparentFX
