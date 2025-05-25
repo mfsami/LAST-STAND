@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour
     Transform target;
     Vector2 moveDir;
 
+    public GameObject coin;
+
     Animator animator;
     SpriteRenderer spriteRenderer;
 
@@ -112,6 +114,9 @@ public class Enemy : MonoBehaviour
         this.enabled = false;
 
         StartCoroutine(FadeAndDestroy());
+
+        // Drop coin 
+        Instantiate(coin, transform.position, transform.rotation);
     }
 
     private IEnumerator FadeAndDestroy()

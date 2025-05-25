@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7312444306569016530}
   - component: {fileID: 1173055229910069023}
   m_Layer: 0
-  m_Name: CopperCoin
+  m_Name: Coin
   m_TagString: CopperCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
