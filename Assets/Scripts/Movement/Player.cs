@@ -10,6 +10,12 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb;
     Animator animator;
     SpriteRenderer spriteRenderer;
+    public Enemy enemy;
+
+    public float health = 4;
+
+    private float moveX;
+    private float moveY;
 
 
     private void Start()
@@ -50,6 +56,53 @@ public class Player : MonoBehaviour
         {
             spriteRenderer.flipX = true;
         }
+
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            
+            TakeDamagePlayer();
+        }
+    }
+
+
+    public void TakeDamagePlayer()
+    {
+        // Change later to public value, differnt damage depending on zombie type
+        health -= 1;
+        Debug.Log("HEALTH =" + health);
+
+        if (health <= 0)
+        {
+            ScatterYourSorrowsToTheHeartlessWorld();
+        }
+
+        // Moving right
+        if (moveX > 0)
+        {
+            animator.SetTrigger("PlayerDmgWalk");
+
+        }
+
+        else if (moveX < 0)
+        {
+            animator.SetTrigger("PlayerDmgWalk");
+        }
+
+        else
+        {
+            animator.SetTrigger("PlayerDmgIdle");
+        }
+
+        }
+
+    private void ScatterYourSorrowsToTheHeartlessWorld()
+    {
+        Destroy(gameObject);
     }
 
     
