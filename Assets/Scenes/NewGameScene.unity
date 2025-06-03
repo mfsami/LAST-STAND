@@ -159,8 +159,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 33.389973}
+  m_SizeDelta: {x: 0, y: 66.78005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &30339222
 MonoBehaviour:
@@ -47973,6 +47973,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277429456}
   m_CullTransparentMesh: 1
+--- !u!1 &1369562205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1369562207}
+  - component: {fileID: 1369562206}
+  m_Layer: 0
+  m_Name: ShopMenuController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1369562206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369562205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee007cf60181fbf4ab75a928dc463825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sign1Animator: {fileID: 1823702232}
+  sign2Animator: {fileID: 1867514451}
+  sign3Animator: {fileID: 1879573714}
+--- !u!4 &1369562207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369562205}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 940.9398, y: 548.1286, z: 1.8527576}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1419009999
 GameObject:
   m_ObjectHideFlags: 0
@@ -49727,6 +49774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 7898905177022655503, guid: aba7528582242224db31d9f528fd59af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9048110212212670284, guid: aba7528582242224db31d9f528fd59af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.35
@@ -49788,3 +49839,4 @@ SceneRoots:
   - {fileID: 771099373}
   - {fileID: 1511923263}
   - {fileID: 547460786}
+  - {fileID: 1369562207}
