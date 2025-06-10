@@ -12,19 +12,30 @@ public class ShopMenuController : MonoBehaviour
 
     public Merchant merchant;
 
+    //public GameObject shopMenuParent;
+
 
     void Update()
     {
+
+        if (merchant == null)
+        {
+            Debug.LogWarning("Merchant is NULL!");
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.E) && merchant.playerInRange)
         {
             // Shop is closed and player in range of merchant
             if (!shopIsOpen)
             {
+                //shopMenuParent.SetActive(true);
                 OpenShop();
             }
             
             else 
             {
+                //shopMenuParent.SetActive(false);
                 CloseShop();
             }
         }

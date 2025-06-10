@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     private float moveX;
     private float moveY;
 
+    public GameObject grave;
+
 
     private void Start()
     {
@@ -103,6 +105,7 @@ public class Player : MonoBehaviour
     private void ScatterYourSorrowsToTheHeartlessWorld()
     {
         Destroy(gameObject);
+        Instantiate(grave, transform.position, transform.rotation);
     }
 
     
