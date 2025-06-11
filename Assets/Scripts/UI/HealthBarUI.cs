@@ -28,7 +28,7 @@ public class HealthBarUI : MonoBehaviour
             if (currentHealth >= 1 && currentHealth <= 3)
             {
                 int flashIndex = 3 - currentHealth;
-                Debug.Log("FLASH INDEX: " + flashIndex);
+                
                 healthBarFlash.sprite = healthBarFlashSprites[flashIndex];
                 StartCoroutine(FlashEffect());
             }
@@ -40,7 +40,7 @@ public class HealthBarUI : MonoBehaviour
 
     IEnumerator FlashEffect()
     {
-        Debug.Log("FlashEffect started");
+        
         // Start fully visible
         Color flashColor = healthBarFlash.color;
         flashColor.a = 1f;
@@ -58,7 +58,7 @@ public class HealthBarUI : MonoBehaviour
             yield return null;
         }
 
-        // Ensure it's fully invisible
+        // fully invisible
         flashColor.a = 0f;
         healthBarFlash.color = flashColor;
     }
