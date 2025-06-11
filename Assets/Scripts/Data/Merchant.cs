@@ -7,16 +7,22 @@ public class Merchant : MonoBehaviour
 {
 
     public bool playerInRange = false;
+    public Animator interact;
     
-    void Update()
+
+    private InteractPopUp popUp;
+
+    private void Start()
     {
-        
+        popUp = GetComponentInChildren<InteractPopUp>();
     }
+
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player")){
             playerInRange = true;
-            Debug.Log("PRESS E TO OPEN SHOP");
+            popUp.Show();
         }
     }
 
@@ -25,7 +31,7 @@ public class Merchant : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerInRange = false;
-            Debug.Log("OUTSIDE RANGE");
+            popUp.Hide();
         }
     }
 }
