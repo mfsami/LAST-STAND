@@ -49717,6 +49717,11 @@ MonoBehaviour:
   - {fileID: 107630496, guid: 8d86f3af811c30c4183993a51bd8d25d, type: 3}
   - {fileID: -462290961, guid: 8d86f3af811c30c4183993a51bd8d25d, type: 3}
   - {fileID: 1017322174, guid: 8d86f3af811c30c4183993a51bd8d25d, type: 3}
+  healthBarFlash: {fileID: 338140201}
+  healthBarFlashSprites:
+  - {fileID: 995843327, guid: 8d86f3af811c30c4183993a51bd8d25d, type: 3}
+  - {fileID: -1708090988, guid: 8d86f3af811c30c4183993a51bd8d25d, type: 3}
+  - {fileID: 1339114662, guid: 8d86f3af811c30c4183993a51bd8d25d, type: 3}
 --- !u!1 &2058832114
 GameObject:
   m_ObjectHideFlags: 0
