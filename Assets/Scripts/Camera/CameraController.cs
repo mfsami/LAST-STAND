@@ -9,6 +9,10 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
+        // Exit early if player is destroyed
+        if (playerTransform == null)
+            return; 
+
         // Calculate mouse position in world coordinates then calculate displacement depending on difference between mouse and player position
         Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3 cameraDisplacement = (mousePosition - playerTransform.position) * displacementMultiplier;
