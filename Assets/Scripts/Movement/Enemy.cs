@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     Vector2 moveDir;
 
     public GameObject coin;
+    public System.Action OnDeath;
+
 
     Animator animator;
     SpriteRenderer spriteRenderer;
@@ -32,7 +34,7 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float dmgDealt)
     {
         health -= dmgDealt;
-        Debug.Log("Enemy health :" + health);
+        
 
         // Check if more horizontal or vertical
         // Here checks horizontal
@@ -114,6 +116,8 @@ public class Enemy : MonoBehaviour
         this.enabled = false;
 
         StartCoroutine(FadeAndDestroy());
+
+        OnDeath?.Invoke();
 
         // Drop coin 
         Instantiate(coin, transform.position, transform.rotation);

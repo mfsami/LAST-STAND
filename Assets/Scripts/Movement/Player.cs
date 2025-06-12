@@ -74,9 +74,9 @@ public class Player : MonoBehaviour
 
     public void TakeDamagePlayer()
     {
-        // Change later to public value, differnt damage depending on zombie type
+        
         health -= 1;
-        Debug.Log("HEALTH =" + health);
+        
 
         if (health <= 0)
         {

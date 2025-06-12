@@ -17,7 +17,7 @@ public class PlayerData : MonoBehaviour
     public void AddCoin(int amount)
     {
         money += amount;
-        Debug.Log("Obtained: " + amount);
-        Debug.Log("New balance: " + money);
+        //Debug.Log("Obtained: " + amount);
+        //Debug.Log("New balance: " + money);
     }
 }

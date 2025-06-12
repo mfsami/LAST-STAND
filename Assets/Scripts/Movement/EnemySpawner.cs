@@ -7,44 +7,47 @@ public class EnemySpawner : MonoBehaviour
     public Transform playerTransform;
     public GameObject enemyPrefab;
 
-    public float spawnInterval = 5f;
-    public float spawnDistanceFromPlayer = 12f;
+
+    public float spawnRadius = 12f;
+    public float spawnInterval = 1.5f;
+    public int startingEnemies = 10;
+    public float roundDelay = 10f;
+
+    private int currentRound = 1;
+    private int enemiesToSpawn;
+    private int enemiesSpawned = 0;
+    private int enemiesAlive = 0;
 
     private float spawnTimer = 0f;
-
-    // Delays 
-    public float minSpawnInterval = 3f;
-    public float maxSpawnInterval = 8f;
-
-    public int minEnemiesPerSpawn = 1;
-    public int maxEnemiesPerSpawn = 3;
-
-    private float currentSpawnDelay;
+    private bool roundInProgress = false;
+    public float spawnDistanceFromPlayer = 12f;
 
     private void Start()
     {
-        SetRandomSpawnDelay();
+        StartNewRound();
     }
 
 
     void Update()
     {
+
+        if (!roundInProgress) return;
+        
         spawnTimer += Time.deltaTime;
 
-        if (spawnTimer >= currentSpawnDelay)
+
+        if (spawnTimer >= spawnInterval && enemiesSpawned < enemiesToSpawn)
         {
-
+            SpawnEnemy();
             spawnTimer = 0f;
+        }
 
-            int enemiesToSpawn = Random.Range(minEnemiesPerSpawn, maxEnemiesPerSpawn + 1);
-
-            for (int i = 0; i < enemiesToSpawn; i++)
-            {
-                SpawnEnemy();
-            }
-
-            SetRandomSpawnDelay();
-
+        // If rounds over
+        if (enemiesSpawned == enemiesToSpawn && enemiesAlive <= 0)
+        {
+            roundInProgress = false;
+            Debug.Log($"Round {currentRound} complete! Next round in {roundDelay} seconds...");
+            StartCoroutine(NextRoundAfterDelay(roundDelay));
         }
     }
 
@@ -58,12 +61,32 @@ public class EnemySpawner : MonoBehaviour
         Vector2 randomDir = Random.insideUnitCircle.normalized;
         Vector3 spawnPosition = playerTransform.position + new Vector3(randomDir.x, randomDir.y, 0) * spawnDistanceFromPlayer;
 
-        Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+        GameObject enemy = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+
+        enemiesAlive++;
+        enemiesSpawned++;
+
+        enemy.GetComponent<Enemy>().OnDeath = () =>
+        {
+            enemiesAlive--;
+        };
 
     }
 
-    void SetRandomSpawnDelay()
+    IEnumerator NextRoundAfterDelay(float delay)
     {
-        currentSpawnDelay = Random.Range(minSpawnInterval, maxSpawnInterval);
+        yield return new WaitForSeconds(delay);
+        currentRound++;
+        StartNewRound();
+    }
+
+    void StartNewRound()
+    {
+        enemiesToSpawn = startingEnemies + (currentRound - 1) * 5; // +5 more each round
+        enemiesSpawned = 0;
+        enemiesAlive = 0;
+        roundInProgress = true;
+
+        Debug.Log($"--- Round {currentRound} Started ---");
     }
 }
