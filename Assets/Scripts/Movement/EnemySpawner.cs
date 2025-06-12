@@ -12,15 +12,39 @@ public class EnemySpawner : MonoBehaviour
 
     private float spawnTimer = 0f;
 
-    
+    // Delays 
+    public float minSpawnInterval = 3f;
+    public float maxSpawnInterval = 8f;
+
+    public int minEnemiesPerSpawn = 1;
+    public int maxEnemiesPerSpawn = 3;
+
+    private float currentSpawnDelay;
+
+    private void Start()
+    {
+        SetRandomSpawnDelay();
+    }
+
+
     void Update()
     {
         spawnTimer += Time.deltaTime;
 
-        if (spawnTimer >= spawnInterval)
+        if (spawnTimer >= currentSpawnDelay)
         {
+
             spawnTimer = 0f;
-            SpawnEnemy();
+
+            int enemiesToSpawn = Random.Range(minEnemiesPerSpawn, maxEnemiesPerSpawn + 1);
+
+            for (int i = 0; i < enemiesToSpawn; i++)
+            {
+                SpawnEnemy();
+            }
+
+            SetRandomSpawnDelay();
+
         }
     }
 
@@ -36,5 +60,10 @@ public class EnemySpawner : MonoBehaviour
 
         Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
 
+    }
+
+    void SetRandomSpawnDelay()
+    {
+        currentSpawnDelay = Random.Range(minSpawnInterval, maxSpawnInterval);
     }
 }
