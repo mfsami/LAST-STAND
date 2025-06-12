@@ -17,6 +17,10 @@ public class Player : MonoBehaviour
     private float moveX;
     private float moveY;
 
+    private bool canTakeDamage = true;
+    public float damageCooldown = 1f;
+
+
     public GameObject grave;
 
 
@@ -62,14 +66,23 @@ public class Player : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") && canTakeDamage)
         {
-            
-            TakeDamagePlayer();
+            StartCoroutine(DamageCooldown());
         }
     }
+
+    private IEnumerator DamageCooldown()
+    {
+        canTakeDamage = false;
+        TakeDamagePlayer();
+        yield return new WaitForSeconds(damageCooldown);
+        canTakeDamage = true;
+    }
+
+
 
 
     public void TakeDamagePlayer()

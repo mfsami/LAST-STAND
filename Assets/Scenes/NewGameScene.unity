@@ -540,6 +540,7 @@ MonoBehaviour:
   speed: 5
   enemy: {fileID: 0}
   health: 4
+  damageCooldown: 1
   grave: {fileID: 2741827758096344499, guid: b845c0efdcc21994199f36cb1f2645c4, type: 3}
 --- !u!95 &63749047
 Animator:
@@ -654,7 +655,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
