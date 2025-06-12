@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7312444306569016530}
   - component: {fileID: 1173055229910069023}
   m_Layer: 0
-  m_Name: Coin
+  m_Name: Coin2
   m_TagString: CopperCoin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 14
-  m_Sprite: {fileID: -1842053033, guid: f32df7389f98e934d934e9e2b3faf061, type: 3}
+  m_Sprite: {fileID: 1911356005, guid: e409d03172d94974485991d5c676d44c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 5157246254822575608}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 36fb3547c326f004a9ab7b6525120d82, type: 2}
+  m_Controller: {fileID: 9100000, guid: f803a95e8ff0c324080a604c4fc82d0e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -155,4 +155,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb555733396b7504b94492cf35839f56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinValue: 1
+  coinValue: 3
