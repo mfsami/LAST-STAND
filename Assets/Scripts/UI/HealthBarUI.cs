@@ -32,6 +32,13 @@ public class HealthBarUI : MonoBehaviour
                 healthBarFlash.sprite = healthBarFlashSprites[flashIndex];
                 StartCoroutine(FlashEffect());
             }
+
+            else if (currentHealth == 0)
+            {
+                // Flash the death sprite (index 3 in your list)
+                healthBarFlash.sprite = healthBarFlashSprites[3];
+                StartCoroutine(FlashEffect());
+            }
         }
 
         previousHealth = currentHealth;
