@@ -9,12 +9,12 @@ public class WeaponUI : MonoBehaviour
     public SpriteRenderer weaponSprite;
     void Update()
     {
-        if (weaponUI.sprite != weaponSprite.sprite)
+        if (weaponUI != null && weaponSprite != null)
         {
             weaponUI.sprite = weaponSprite.sprite;
         }
-    }
 
+    }
 
 
 }

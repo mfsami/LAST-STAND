@@ -3,23 +3,19 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class CameraController : MonoBehaviour
 {
-    public Transform playerTransform;
-    public float pixelsPerUnit = 16f; // Same as Pixel Perfect Camera
+    [SerializeField] private Transform playerTransform;
+    [SerializeField] private float displacementMultiplier = 0.15f;
+    private float zPosition = -10;
 
-    private void LateUpdate()
+    private void Update()
     {
-        if (playerTransform == null) return;
+        // Calculate mouse position in world coordinates then calculate displacement depending on difference between mouse and player position
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 cameraDisplacement = (mousePosition - playerTransform.position) * displacementMultiplier;
 
-        Vector3 targetPosition = playerTransform.position;
-        targetPosition.z = transform.position.z;
-
-        // Snap to pixel grid
-        Vector3 snappedPosition = new Vector3(
-            Mathf.Round(targetPosition.x * pixelsPerUnit) / pixelsPerUnit,
-            Mathf.Round(targetPosition.y * pixelsPerUnit) / pixelsPerUnit,
-            targetPosition.z
-        );
-
-        transform.position = snappedPosition;
+        // Determine final camera position and assign it
+        Vector3 finalCameraPosition = playerTransform.position + cameraDisplacement;
+        finalCameraPosition.z = zPosition;
+        transform.position = finalCameraPosition;
     }
 }
