@@ -20,8 +20,12 @@ public class Player : MonoBehaviour
     private bool canTakeDamage = true;
     public float damageCooldown = 1f;
 
+    public GameObject deathScreen;
+
 
     public GameObject grave;
+
+    public Animator redOverlayAnimator;
 
 
     private void Start()
@@ -117,6 +121,7 @@ public class Player : MonoBehaviour
 
     private void ScatterYourSorrowsToTheHeartlessWorld()
     {
+        redOverlayAnimator.Play("DeathScreen");
         Destroy(gameObject);
         Instantiate(grave, transform.position, transform.rotation);
     }

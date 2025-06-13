@@ -8,8 +8,8 @@ public class Merchant : MonoBehaviour
 
     public bool playerInRange = false;
     public Animator interact;
-    
 
+    public GameObject shopMenu;
     private InteractPopUp popUp;
 
     private void Start()
@@ -21,6 +21,7 @@ public class Merchant : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player")){
+            shopMenu.SetActive(true);
             playerInRange = true;
             popUp.Show();
         }
