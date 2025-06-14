@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class CursorManager : MonoBehaviour
 {
-    
+    private Camera cam;
 
     void Start()
     {
-        Cursor.visible = false;
+        cam = Camera.main;
+        Cursor.visible = false; // Hide the system cursor
     }
 
-    void LateUpdate()
+    void Update()
     {
-        transform.position = Input.mousePosition;
+        Vector3 mouseWorld = cam.ScreenToWorldPoint(Input.mousePosition);
+        mouseWorld.z = 0f; // Ensure it's flat on the game plane
+        transform.position = mouseWorld;
     }
 }

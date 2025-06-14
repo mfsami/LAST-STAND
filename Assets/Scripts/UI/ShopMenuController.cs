@@ -14,6 +14,8 @@ public class ShopMenuController : MonoBehaviour
 
     public GunController weapon;
 
+    public GameObject buttons;
+
     //public GameObject shopMenuParent;
 
 
@@ -36,6 +38,7 @@ public class ShopMenuController : MonoBehaviour
 
                 // Disable player input
                 weapon.enabled = false;
+                buttons.SetActive(true);
             }
             
             else 
@@ -45,6 +48,7 @@ public class ShopMenuController : MonoBehaviour
 
                 // Re-enable player input
                 weapon.enabled = true;
+                buttons.SetActive(false);
             }
         }
 
@@ -52,6 +56,7 @@ public class ShopMenuController : MonoBehaviour
         if (shopIsOpen &&  merchant.playerInRange == false)
         {
             CloseShop();
+            buttons.SetActive(false);
         }
 
     }
