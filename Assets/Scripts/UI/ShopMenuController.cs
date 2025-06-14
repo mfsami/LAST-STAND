@@ -12,6 +12,8 @@ public class ShopMenuController : MonoBehaviour
 
     public Merchant merchant;
 
+    public GunController weapon;
+
     //public GameObject shopMenuParent;
 
 
@@ -31,12 +33,18 @@ public class ShopMenuController : MonoBehaviour
             {
                 //shopMenuParent.SetActive(true);
                 OpenShop();
+
+                // Disable player input
+                weapon.enabled = false;
             }
             
             else 
             {
                 //shopMenuParent.SetActive(false);
                 CloseShop();
+
+                // Re-enable player input
+                weapon.enabled = true;
             }
         }
 
@@ -64,5 +72,13 @@ public class ShopMenuController : MonoBehaviour
         sign3Animator.SetTrigger("Rise");
         shopIsOpen = false;
     }
+
+    public void OnBuyAkPressed()
+    {
+        Debug.Log("AK PURCHASED");
+        CloseShop();
+    }
+
+    public void ClickTest() => Debug.Log("Clicked!");
 }
 
