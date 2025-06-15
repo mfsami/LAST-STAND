@@ -9,7 +9,7 @@ public class GunController : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float fireRate = 1.3f;
-    public float bulletSpeed = 50f;
+    public float bulletSpeed = 30f;
     private float fireCooldown = 0f;
 
     [Header("Gun Shake Settings")]
@@ -93,7 +93,7 @@ public class GunController : MonoBehaviour
         // Direction vector from guns gunpoint to mouse
         // Subtarcting positions gives vector pointing from gun to mouse
         // normalize to remove distance, we only need direction
-        Vector3 direction = (mousePos - firePoint.position).normalized;
+        Vector3 direction = transform.right;
 
         // Calculate rotation angle based on direction
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
