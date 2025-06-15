@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    
+
+    public void OnPlayPressed()
     {
-        
+        Debug.Log("Play pressed");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnControlsPressed()
     {
-        
+        Debug.Log("Controls pressed");
+    }
+
+    public void OnExitPressed()
+    {
+        Debug.Log("Exit pressed");
     }
 }
