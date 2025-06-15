@@ -125,6 +125,12 @@ public class GunController : MonoBehaviour
         }
     }
 
+    public void SetGunStats(float newFireRate, float newBulletSpeed)
+    {
+        fireRate = newFireRate;
+        bulletSpeed = newBulletSpeed;
+    }
+
 
 
 

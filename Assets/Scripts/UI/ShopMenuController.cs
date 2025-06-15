@@ -19,6 +19,8 @@ public class ShopMenuController : MonoBehaviour
 
     public GameObject buttons;
 
+    public Bullet bullet;
+
 
     public PlayerData playerData;
 
@@ -28,7 +30,16 @@ public class ShopMenuController : MonoBehaviour
     public Sprite shotgunSprite;
     public Sprite sniperSprite;
 
-    //
+    //Weapon stats
+    private float akRate = 0.17f;
+    private float akDmg = 5;
+
+    private float shotRate = 1.5f;
+    private float shotDmg = 10;
+
+    private float sniperRate = 2f;
+    private float sniperDmg = 20;
+
 
 
     // Shop prices
@@ -106,6 +117,11 @@ public class ShopMenuController : MonoBehaviour
             playerData.money -= akPrice;
             weaponSpriteRenderer.sprite = akSprite;
 
+            // Change (fireRate, bulletSpeed)
+            weapon.SetGunStats(akRate, 60f);
+            bullet.SetGunDmg(akDmg);
+            
+
             Debug.Log("AK PURCHASED");
             CloseShop();
         }
@@ -122,6 +138,10 @@ public class ShopMenuController : MonoBehaviour
             playerData.money -= shotgunPrice;
             weaponSpriteRenderer.sprite = shotgunSprite;
 
+            // Change (fireRate, bulletSpeed)
+            weapon.SetGunStats(shotRate, 60f);
+            bullet.SetGunDmg(shotDmg);
+
             Debug.Log("SHOTGUN PURCHASED");
             CloseShop();
         }
@@ -137,6 +157,10 @@ public class ShopMenuController : MonoBehaviour
         {
             playerData.money -= sniperPrice;
             weaponSpriteRenderer.sprite = sniperSprite;
+
+            // Change (fireRate, bulletSpeed)
+            weapon.SetGunStats(sniperRate, 60f);
+            bullet.SetGunDmg(sniperDmg);
 
             Debug.Log("SNIPER PURCHASED");
             CloseShop();

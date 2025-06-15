@@ -161,4 +161,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40f9a5d40b50e924ba90a1bd0167670b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmgDealt: 10
+  dmgDealt: 5

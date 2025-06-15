@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
 
     
-    public float dmgDealt = 10f;
+    public float dmgDealt = 5f;
 
     
 
@@ -29,5 +29,11 @@ public class Bullet : MonoBehaviour
     private void OnBecameInvisible()
     {
         Destroy(gameObject);
+    }
+
+    public void SetGunDmg(float newDmg)
+    {
+        dmgDealt = newDmg;
+        
     }
 }
