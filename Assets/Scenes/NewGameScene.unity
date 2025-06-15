@@ -577,6 +577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f4363239706a8d498d26e379093670c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  money: 50
   coinText: {fileID: 583403393}
 --- !u!114 &63749050
 MonoBehaviour:
@@ -598,7 +599,7 @@ MonoBehaviour:
   m_Intensity: 0.74
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000813bd345
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -1951,7 +1952,7 @@ MonoBehaviour:
   m_Intensity: 0.14
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000813bd345
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -3082,7 +3083,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1369562206}
         m_TargetAssemblyTypeName: ShopMenuController, Assembly-CSharp
-        m_MethodName: ClickTest
+        m_MethodName: OnSniperPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48286,7 +48287,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1369562206}
         m_TargetAssemblyTypeName: ShopMenuController, Assembly-CSharp
-        m_MethodName: ClickTest
+        m_MethodName: OnBuyAkPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -48503,7 +48504,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1369562206}
         m_TargetAssemblyTypeName: ShopMenuController, Assembly-CSharp
-        m_MethodName: ClickTest
+        m_MethodName: OnBuyShotgunPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49562,7 +49563,7 @@ GameObject:
   - component: {fileID: 1242857394}
   - component: {fileID: 1242857393}
   - component: {fileID: 1242857395}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CustomCursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49629,8 +49630,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242857392}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -49821,7 +49822,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -106.349976, y: -20.829956}
+  m_AnchoredPosition: {x: -106.3501, y: -20.829956}
   m_SizeDelta: {x: 212.6999, y: -41.6601}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1270212219
@@ -49985,6 +49986,14 @@ MonoBehaviour:
   merchant: {fileID: 670096746}
   weapon: {fileID: 853646571}
   buttons: {fileID: 1122857315}
+  playerData: {fileID: 63749049}
+  weaponSpriteRenderer: {fileID: 853646572}
+  akSprite: {fileID: 21300000, guid: 1182e6e95c39e694b8530c5005649053, type: 3}
+  shotgunSprite: {fileID: 21300000, guid: fe947146e41ff5344a544570157df842, type: 3}
+  sniperSprite: {fileID: 21300000, guid: d81dc64b15c58f4459b1bfcc597b00a6, type: 3}
+  akPrice: 20
+  shotgunPrice: 50
+  sniperPrice: 100
 --- !u!4 &1369562207
 Transform:
   m_ObjectHideFlags: 0
@@ -50052,7 +50061,7 @@ MonoBehaviour:
   m_Intensity: 7.57
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000813bd345
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 12
@@ -52327,7 +52336,7 @@ MonoBehaviour:
   m_Intensity: 0.54
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000813bd345
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -52494,7 +52503,7 @@ MonoBehaviour:
   m_Intensity: 2.33
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000813bd345
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 12
@@ -52706,6 +52715,6 @@ SceneRoots:
   - {fileID: 1730312531}
   - {fileID: 1626525638}
   - {fileID: 1969167935}
+  - {fileID: 1242857394}
   - {fileID: 1814485271}
   - {fileID: 1369562207}
-  - {fileID: 1242857394}

@@ -16,7 +16,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - Cursor
   - 
   - 
   - 
@@ -45,4 +45,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Cursor
+    uniqueID: 1171471233
     locked: 0

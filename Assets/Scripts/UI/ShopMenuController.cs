@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using UnityEngine;
 
 public class ShopMenuController : MonoBehaviour
@@ -8,6 +9,8 @@ public class ShopMenuController : MonoBehaviour
     public Animator sign2Animator;
     public Animator sign3Animator;
 
+    private int money;
+
     private bool shopIsOpen = false;
 
     public Merchant merchant;
@@ -15,6 +18,25 @@ public class ShopMenuController : MonoBehaviour
     public GunController weapon;
 
     public GameObject buttons;
+
+
+    public PlayerData playerData;
+
+    // Weapons
+    public SpriteRenderer weaponSpriteRenderer;
+    public Sprite akSprite;
+    public Sprite shotgunSprite;
+    public Sprite sniperSprite;
+
+    //
+
+
+    // Shop prices
+
+    public int akPrice = 20;
+    public int shotgunPrice = 50;
+    public int sniperPrice = 100;
+
 
     //public GameObject shopMenuParent;
 
@@ -35,20 +57,12 @@ public class ShopMenuController : MonoBehaviour
             {
                 //shopMenuParent.SetActive(true);
                 OpenShop();
-
-                // Disable player input
-                weapon.enabled = false;
-                buttons.SetActive(true);
             }
             
             else 
             {
                 //shopMenuParent.SetActive(false);
                 CloseShop();
-
-                // Re-enable player input
-                weapon.enabled = true;
-                buttons.SetActive(false);
             }
         }
 
@@ -56,7 +70,6 @@ public class ShopMenuController : MonoBehaviour
         if (shopIsOpen &&  merchant.playerInRange == false)
         {
             CloseShop();
-            buttons.SetActive(false);
         }
 
     }
@@ -68,6 +81,10 @@ public class ShopMenuController : MonoBehaviour
         sign2Animator.SetTrigger("Drop");
         sign3Animator.SetTrigger("Drop");
         shopIsOpen = true;
+
+        // Disable player input
+        weapon.enabled = false;
+        buttons.SetActive(true);
     }
 
     private void CloseShop()
@@ -76,14 +93,59 @@ public class ShopMenuController : MonoBehaviour
         sign2Animator.SetTrigger("Rise");
         sign3Animator.SetTrigger("Rise");
         shopIsOpen = false;
+
+        // Re-enable player input
+        weapon.enabled = true;
+        buttons.SetActive(false);
     }
 
     public void OnBuyAkPressed()
     {
-        Debug.Log("AK PURCHASED");
-        CloseShop();
+        if (playerData.money >= akPrice)
+        {
+            playerData.money -= akPrice;
+            weaponSpriteRenderer.sprite = akSprite;
+
+            Debug.Log("AK PURCHASED");
+            CloseShop();
+        }
+        else
+        {
+            Debug.Log("Not enough money!");
+        }
     }
 
-    public void ClickTest() => Debug.Log("Clicked!");
+    public void OnBuyShotgunPressed()
+    {
+        if (playerData.money >= shotgunPrice)
+        {
+            playerData.money -= shotgunPrice;
+            weaponSpriteRenderer.sprite = shotgunSprite;
+
+            Debug.Log("SHOTGUN PURCHASED");
+            CloseShop();
+        }
+        else
+        {
+            Debug.Log("Not enough money!");
+        }
+    }
+
+    public void OnSniperPressed()
+    {
+        if (playerData.money >= sniperPrice)
+        {
+            playerData.money -= sniperPrice;
+            weaponSpriteRenderer.sprite = sniperSprite;
+
+            Debug.Log("SNIPER PURCHASED");
+            CloseShop();
+        }
+        else
+        {
+            Debug.Log("Not enough money!");
+        }
+    }
+
 }
 

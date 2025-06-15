@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PlayerData : MonoBehaviour
 {
-    private int money = 0;
+    public int money = 0;
     public TextMeshProUGUI coinText;
 
     void Update()
