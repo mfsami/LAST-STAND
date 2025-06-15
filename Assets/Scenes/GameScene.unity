@@ -2343,13 +2343,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 604621081}
+  - component: {fileID: 604621082}
   m_Layer: 5
   m_Name: ButtonGroup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &604621081
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2371,6 +2372,27 @@ RectTransform:
   m_AnchoredPosition: {x: -45.57, y: -41.65}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &604621082
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604621080}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0516eb5f6df17a74abee06f66a6bb619, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &670096739
 GameObject:
   m_ObjectHideFlags: 0
@@ -49934,7 +49956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1270212218
 RectTransform:
   m_ObjectHideFlags: 0
@@ -50700,6 +50722,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stats: {fileID: 1270212217}
+  buttons: {fileID: 604621080}
 --- !u!1 &1682989464
 GameObject:
   m_ObjectHideFlags: 0
@@ -51624,7 +51647,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1730312530
 MonoBehaviour:
   m_ObjectHideFlags: 0

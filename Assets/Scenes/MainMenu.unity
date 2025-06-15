@@ -655,7 +655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95486fe0efb7b934b81df0f8416ee085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: MainScene
+  sceneToLoad: GameScene
 --- !u!1 &597957215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,6 +1471,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 543078347}
+  loadGameScene: GameScene
+  loadMenuScene: 
 --- !u!4 &1159701637
 Transform:
   m_ObjectHideFlags: 0
