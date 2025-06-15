@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
-    
+    public GameObject fade;
 
     public void OnPlayPressed()
     {
         Debug.Log("Play pressed");
+        fade.SetActive(true);
     }
 
     public void OnControlsPressed()
