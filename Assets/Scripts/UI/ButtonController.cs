@@ -20,5 +20,6 @@ public class ButtonController : MonoBehaviour
     public void OnExitPressed()
     {
         Debug.Log("Exit pressed");
+        Application.Quit();
     }
 }
