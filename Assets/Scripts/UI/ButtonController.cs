@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonController : MonoBehaviour
 {
     public GameObject fade;
+    public string loadGameScene;
+    public string loadMenuScene;
 
     public void OnPlayPressed()
     {
@@ -22,4 +25,18 @@ public class ButtonController : MonoBehaviour
         Debug.Log("Exit pressed");
         Application.Quit();
     }
+
+    public void OnRetryPressed()
+    {
+        Debug.Log("Retry pressed");
+        SceneManager.LoadScene(loadGameScene);
+    }
+
+    public void OnQuitPressed()
+    {
+        Debug.Log("Quit pressed");
+        SceneManager.LoadScene(loadMenuScene);
+    }
+
+    
 }
