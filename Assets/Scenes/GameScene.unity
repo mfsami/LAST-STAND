@@ -345,7 +345,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &30339221
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3544,6 +3544,7 @@ MonoBehaviour:
   currentGunSound: {fileID: 8300000, guid: 4e50f4ba07b86d741a1ae137cee37ab5, type: 3}
   loopAudioSource: {fileID: 0}
   loopGunSound: {fileID: 0}
+  damage: 5
 --- !u!212 &853646572
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3653,9 +3654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '50
-
-'
+  m_text: 20
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c19292398c31c7498667fc6702b6493, type: 2}
   m_sharedMaterial: {fileID: -7416576321772673218, guid: 5c19292398c31c7498667fc6702b6493, type: 2}
@@ -50065,9 +50064,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '20
-
-'
+  m_text: 50
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c19292398c31c7498667fc6702b6493, type: 2}
   m_sharedMaterial: {fileID: -7416576321772673218, guid: 5c19292398c31c7498667fc6702b6493, type: 2}
@@ -51551,8 +51548,8 @@ MonoBehaviour:
   shopDrop: {fileID: 8300000, guid: df7ed7e042a2c204195ddac85090cb1a, type: 3}
   RiseSrc: {fileID: 1464103622}
   shopRise: {fileID: 8300000, guid: 0d83c236d7fa3cc4282a5609fb216e8e, type: 3}
-  akPrice: 20
-  shotgunPrice: 50
+  akPrice: 50
+  shotgunPrice: 20
   sniperPrice: 100
 --- !u!4 &1369562207
 Transform:
@@ -53598,7 +53595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1730312530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53614,10 +53611,11 @@ MonoBehaviour:
   playerTransform: {fileID: 63749044}
   enemyPrefab: {fileID: 7898905177022655503, guid: aba7528582242224db31d9f528fd59af, type: 3}
   spawnRadius: 12
-  spawnInterval: 1.5
+  spawnInterval: 1
   startingEnemies: 10
-  roundDelay: 10
+  roundDelay: 20
   spawnDistanceFromPlayer: 12
+  enemyMultiplier: 5
 --- !u!4 &1730312531
 Transform:
   m_ObjectHideFlags: 0

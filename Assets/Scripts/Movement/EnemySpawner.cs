@@ -22,6 +22,8 @@ public class EnemySpawner : MonoBehaviour
     private bool roundInProgress = false;
     public float spawnDistanceFromPlayer = 12f;
 
+    public int enemyMultiplier = 5;
+
     private void Start()
     {
         StartNewRound();
@@ -82,7 +84,7 @@ public class EnemySpawner : MonoBehaviour
 
     void StartNewRound()
     {
-        enemiesToSpawn = startingEnemies + (currentRound - 1) * 5; // +5 more each round
+        enemiesToSpawn = startingEnemies + (currentRound - 1) * enemyMultiplier; 
         enemiesSpawned = 0;
         enemiesAlive = 0;
         roundInProgress = true;

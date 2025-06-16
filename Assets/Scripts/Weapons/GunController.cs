@@ -28,8 +28,10 @@ public class GunController : MonoBehaviour
 
     [Header("Looping Gun Audio")]
     public AudioSource loopAudioSource;
-    public AudioClip loopGunSound; // assign AK sound here
+    public AudioClip loopGunSound;
 
+    [Header("Weapon Damage")]
+    public float damage = 5f; // DEFAULT REVOLVER DAMAGE
 
 
 
@@ -111,6 +113,12 @@ public class GunController : MonoBehaviour
 
         // Spawns bullet at firepoint
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, rotation);
+
+        Bullet bulletScript = bullet.GetComponent<Bullet>();
+        if (bulletScript != null)
+        {
+            bulletScript.SetGunDmg(damage); // from current gun
+        }
 
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
 

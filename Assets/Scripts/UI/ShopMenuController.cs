@@ -32,7 +32,7 @@ public class ShopMenuController : MonoBehaviour
 
     //Weapon stats
     private float akRate = 0.17f;
-    private float akDmg = 5;
+    private float akDmg = 4;
 
     private float shotRate = 1.5f;
     private float shotDmg = 10;
@@ -144,7 +144,9 @@ public class ShopMenuController : MonoBehaviour
 
             // Change (fireRate, bulletSpeed)
             weapon.SetGunStats(akRate, 60f);
-            bullet.SetGunDmg(akDmg);
+            //bullet.SetGunDmg(akDmg);
+            weapon.damage = akDmg; 
+
             weapon.currentGunSound = akSound;
 
 
@@ -167,7 +169,7 @@ public class ShopMenuController : MonoBehaviour
 
             // Change (fireRate, bulletSpeed)
             weapon.SetGunStats(shotRate, 60f);
-            bullet.SetGunDmg(shotDmg);
+            weapon.damage = shotDmg;
             weapon.currentGunSound = shotgunSound;
 
             Debug.Log("SHOTGUN PURCHASED");
@@ -189,7 +191,7 @@ public class ShopMenuController : MonoBehaviour
 
             // Change (fireRate, bulletSpeed)
             weapon.SetGunStats(sniperRate, 60f);
-            bullet.SetGunDmg(sniperDmg);
+            weapon.damage = sniperDmg;
             weapon.currentGunSound = sniperSound;
 
             Debug.Log("SNIPER PURCHASED");
