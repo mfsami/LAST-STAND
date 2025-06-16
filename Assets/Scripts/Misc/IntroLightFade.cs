@@ -15,8 +15,13 @@ public class IntroLightFade : MonoBehaviour
 
     public GameObject enemySpawner;
 
+    public Player player;
+
     private void Start()
     {
+        // Player cant move
+        player.enabled = false;
+
         // Start all lights at 0
         globalLight.intensity = 0;
         campfireLight.intensity = 0;
@@ -30,6 +35,7 @@ public class IntroLightFade : MonoBehaviour
     IEnumerator FadeInSequence()
     {
         // Step 1: Campfire warms up
+        yield return new WaitForSeconds(2f);
         yield return StartCoroutine(FadeLight(campfireLight, 0, 2.33f, 5f)); // slow burn
         yield return new WaitForSeconds(0.5f);
 
@@ -39,6 +45,12 @@ public class IntroLightFade : MonoBehaviour
         StartCoroutine(FadeLight(cigaretteLight, 0, 7.57f, fadeDuration));
 
         yield return new WaitForSeconds(fadeDuration + 0.5f);
+
+        // Player can move
+        player.enabled = true;
+
+        // Delay before spawning enemies
+        yield return new WaitForSeconds(5f); 
 
         // Start spawning enemies
         enemySpawner.SetActive(true);
