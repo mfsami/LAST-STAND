@@ -52,8 +52,8 @@ public class ShopMenuController : MonoBehaviour
     public AudioSource DropSrc;
     public AudioClip shopDrop;
 
-    //public AudioSource RiseSrc;
-    //public AudioClip shopRise;
+    public AudioSource RiseSrc;
+    public AudioClip shopRise;
 
 
 
@@ -124,6 +124,10 @@ public class ShopMenuController : MonoBehaviour
         sign2Animator.SetTrigger("Rise");
         sign3Animator.SetTrigger("Rise");
         shopIsOpen = false;
+
+        // Shop rise sound
+        RiseSrc.clip = shopRise;
+        RiseSrc.Play();
 
         // Re-enable player input
         weapon.enabled = true;
