@@ -6,6 +6,8 @@ public class CoinPickup : MonoBehaviour
 {
     public int coinValue = 1; // Set value in the Inspector
 
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -16,6 +18,7 @@ public class CoinPickup : MonoBehaviour
             if (playerData != null)
             {
                 playerData.AddCoin(coinValue);
+                
             }
 
             Destroy(gameObject);

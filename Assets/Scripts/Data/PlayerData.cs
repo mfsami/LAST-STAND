@@ -9,6 +9,10 @@ public class PlayerData : MonoBehaviour
     public int money = 0;
     public TextMeshProUGUI coinText;
 
+    [Header("Audio")]
+    public AudioClip coinSound;
+    public AudioSource coinSrc;
+
     void Update()
     {
         coinText.text = money.ToString();
@@ -17,6 +21,8 @@ public class PlayerData : MonoBehaviour
     public void AddCoin(int amount)
     {
         money += amount;
+        coinSrc.clip = coinSound;
+        coinSrc.Play();
         //Debug.Log("Obtained: " + amount);
         //Debug.Log("New balance: " + money);
     }
