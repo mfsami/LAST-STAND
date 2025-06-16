@@ -40,6 +40,16 @@ public class ShopMenuController : MonoBehaviour
     private float sniperRate = 2f;
     private float sniperDmg = 20;
 
+    [Header("Gun Sounds")]
+    public AudioClip akSound;
+    public AudioClip shotgunSound;
+    public AudioClip sniperSound;
+
+    [Header("Shop SFX")]
+    public AudioSource ShopSrc;
+    public AudioClip purchase;
+    
+
 
 
     // Shop prices
@@ -116,11 +126,13 @@ public class ShopMenuController : MonoBehaviour
         {
             playerData.money -= akPrice;
             weaponSpriteRenderer.sprite = akSprite;
+            PurchaseSFX();
 
             // Change (fireRate, bulletSpeed)
             weapon.SetGunStats(akRate, 60f);
             bullet.SetGunDmg(akDmg);
-            
+            weapon.currentGunSound = akSound;
+
 
             Debug.Log("AK PURCHASED");
             CloseShop();
@@ -137,10 +149,12 @@ public class ShopMenuController : MonoBehaviour
         {
             playerData.money -= shotgunPrice;
             weaponSpriteRenderer.sprite = shotgunSprite;
+            PurchaseSFX();
 
             // Change (fireRate, bulletSpeed)
             weapon.SetGunStats(shotRate, 60f);
             bullet.SetGunDmg(shotDmg);
+            weapon.currentGunSound = shotgunSound;
 
             Debug.Log("SHOTGUN PURCHASED");
             CloseShop();
@@ -157,10 +171,12 @@ public class ShopMenuController : MonoBehaviour
         {
             playerData.money -= sniperPrice;
             weaponSpriteRenderer.sprite = sniperSprite;
+            PurchaseSFX();
 
             // Change (fireRate, bulletSpeed)
             weapon.SetGunStats(sniperRate, 60f);
             bullet.SetGunDmg(sniperDmg);
+            weapon.currentGunSound = sniperSound;
 
             Debug.Log("SNIPER PURCHASED");
             CloseShop();
@@ -169,6 +185,12 @@ public class ShopMenuController : MonoBehaviour
         {
             Debug.Log("Not enough money!");
         }
+    }
+
+    private void PurchaseSFX()
+    {
+        ShopSrc.clip = purchase;
+        ShopSrc.Play();
     }
 
 }

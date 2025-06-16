@@ -22,6 +22,16 @@ public class GunController : MonoBehaviour
     [SerializeField] private Transform playerTransform;
     [SerializeField] private float orbitRadius = 1f;
 
+    [Header("Gun Sounds")]
+    public AudioSource audioSource;
+    public AudioClip currentGunSound;
+
+    [Header("Looping Gun Audio")]
+    public AudioSource loopAudioSource;
+    public AudioClip loopGunSound; // assign AK sound here
+
+
+
 
 
 
@@ -108,6 +118,9 @@ public class GunController : MonoBehaviour
         {
             rb.velocity = direction * bulletSpeed;
         }
+
+        if (currentGunSound != null && audioSource != null)
+            audioSource.PlayOneShot(currentGunSound);
     }
 
     private void GunShake()
