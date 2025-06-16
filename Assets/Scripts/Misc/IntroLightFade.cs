@@ -17,10 +17,18 @@ public class IntroLightFade : MonoBehaviour
 
     public Player player;
 
+    [Header("UI Animators")]
+    public Animator healthBarAnimator;
+    public Animator weaponUIAnimator;
+
+    public GunController weapon;
+
+
     private void Start()
     {
         // Player cant move
         player.enabled = false;
+        weapon.enabled = false;
 
         // Start all lights at 0
         globalLight.intensity = 0;
@@ -48,6 +56,10 @@ public class IntroLightFade : MonoBehaviour
 
         // Player can move
         player.enabled = true;
+        weapon.enabled = true;
+
+        healthBarAnimator.SetTrigger("SlideIn");
+        weaponUIAnimator.SetTrigger("SlideIn");
 
         // Delay before spawning enemies
         yield return new WaitForSeconds(5f); 
