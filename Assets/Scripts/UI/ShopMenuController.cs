@@ -48,7 +48,13 @@ public class ShopMenuController : MonoBehaviour
     [Header("Shop SFX")]
     public AudioSource ShopSrc;
     public AudioClip purchase;
-    
+
+    public AudioSource DropSrc;
+    public AudioClip shopDrop;
+
+    //public AudioSource RiseSrc;
+    //public AudioClip shopRise;
+
 
 
 
@@ -102,6 +108,10 @@ public class ShopMenuController : MonoBehaviour
         sign2Animator.SetTrigger("Drop");
         sign3Animator.SetTrigger("Drop");
         shopIsOpen = true;
+
+        // Shop drop sound
+        DropSrc.clip = shopDrop;
+        DropSrc.Play();
 
         // Disable player input
         weapon.enabled = false;

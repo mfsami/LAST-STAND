@@ -22,10 +22,20 @@ public class Player : MonoBehaviour
 
     public GameObject deathScreen;
 
+    public bool isDead = false;
+
+
 
     public GameObject grave;
 
     public Animator redOverlayAnimator;
+
+    [Header("Audio")]
+    public AudioClip walkSound;
+    public AudioSource walkSrc;
+
+    public AudioSource playerSrc;
+    public AudioClip damageSound;
 
 
     private void Start()
@@ -43,7 +53,15 @@ public class Player : MonoBehaviour
 
     private void Movement()
     {
-        
+        // just in case it's still going
+        if (isDead)
+        {
+            if (walkSrc.isPlaying)
+                walkSrc.Stop(); 
+            return;
+        }
+
+
 
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
@@ -51,8 +69,27 @@ public class Player : MonoBehaviour
         // We need to place these 2 values somewhere, make a Vector2 box
         // move is a box that holds 2 nums, horizontal and vertical movement (Vector2)
         Vector2 move = new Vector2(moveX, moveY).normalized;
+        bool isWalking = move.magnitude > 0.1f;
 
         rb.velocity = move * speed;
+
+        if (isWalking)
+        {
+            if (!walkSrc.isPlaying || walkSrc.clip != walkSound)
+            {
+                walkSrc.clip = walkSound;
+                walkSrc.loop = true;
+                walkSrc.Play();
+            }
+        }
+        else
+        {
+            if (walkSrc.clip == walkSound && walkSrc.isPlaying)
+            {
+                walkSrc.Stop();
+            }
+        }
+
 
         animator.SetFloat("Horizontal", moveX);
         animator.SetFloat("Vertical", moveY);
@@ -93,7 +130,9 @@ public class Player : MonoBehaviour
     {
         
         health -= 1;
-        
+        playerSrc.clip = damageSound;
+        playerSrc.Play();
+
 
         if (health <= 0)
         {
@@ -121,6 +160,10 @@ public class Player : MonoBehaviour
 
     private void ScatterYourSorrowsToTheHeartlessWorld()
     {
+
+        isDead = true;
+        walkSrc.Stop();
+
         redOverlayAnimator.Play("DeathScreen");
         Destroy(gameObject);
         Instantiate(grave, transform.position, transform.rotation);
