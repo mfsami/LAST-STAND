@@ -18,7 +18,8 @@ public class CoinPickup : MonoBehaviour
             if (playerData != null)
             {
                 playerData.AddCoin(coinValue);
-                
+                playerData.totalCoinsCollected += coinValue;
+
             }
 
             Destroy(gameObject);

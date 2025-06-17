@@ -24,6 +24,8 @@ public class EnemySpawner : MonoBehaviour
 
     public int enemyMultiplier = 5;
 
+    public int TotalEnemiesKilled { get; private set; }
+
     private void Start()
     {
         StartNewRound();
@@ -71,6 +73,7 @@ public class EnemySpawner : MonoBehaviour
         enemy.GetComponent<Enemy>().OnDeath = () =>
         {
             enemiesAlive--;
+            TotalEnemiesKilled++; // Track total kills
         };
 
     }

@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
     public bool isDead = false;
 
-
+    public PlayerData playerData;
 
     public GameObject grave;
 
@@ -139,6 +139,7 @@ public class Player : MonoBehaviour
         if (health <= 0)
         {
             ScatterYourSorrowsToTheHeartlessWorld();
+            playerData.isAlive = false;
         }
 
         // Moving right
