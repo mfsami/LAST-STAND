@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -22,6 +23,9 @@ public class IntroLightFade : MonoBehaviour
     public Animator weaponUIAnimator;
 
     public GunController weapon;
+
+    public AudioSource musicSrc;
+    public AudioClip music;
 
 
     private void Start()
@@ -57,6 +61,11 @@ public class IntroLightFade : MonoBehaviour
         // Player can move
         player.enabled = true;
         weapon.enabled = true;
+
+        // Start music
+        musicSrc.clip = music;
+        musicSrc.loop = true;
+        musicSrc.Play();
 
         healthBarAnimator.SetTrigger("SlideIn");
         weaponUIAnimator.SetTrigger("SlideIn");

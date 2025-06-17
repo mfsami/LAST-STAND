@@ -24,6 +24,10 @@ public class Merchant : MonoBehaviour
             shopMenu.SetActive(true);
             playerInRange = true;
             popUp.Show();
+
+            // Register this merchant with the shop controller
+            ShopMenuController shop = FindObjectOfType<ShopMenuController>();
+            shop.merchant = this;
         }
     }
 
