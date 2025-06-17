@@ -36,6 +36,9 @@ public class Player : MonoBehaviour
     public AudioSource playerSrc;
     public AudioClip damageSound;
 
+    public AudioSource deathBuildSrc;
+    public AudioClip buildUp;
+
 
     private void Start()
     {
@@ -162,6 +165,10 @@ public class Player : MonoBehaviour
 
         isDead = true;
         walkSrc.Stop();
+
+        deathBuildSrc.clip = buildUp;
+
+        deathBuildSrc.Play();
 
         redOverlayAnimator.Play("DeathScreen");
         Destroy(gameObject);
