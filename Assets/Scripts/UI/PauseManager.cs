@@ -7,6 +7,7 @@ public class PauseManager : MonoBehaviour
 {
     public GameObject pauseMenuUI;
     private bool isPaused = false;
+    public CameraController cameraController;
 
     void Update()
     {
@@ -24,6 +25,7 @@ public class PauseManager : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
+        cameraController.enabled = true;
     }
 
     public void PauseGame()
@@ -31,6 +33,7 @@ public class PauseManager : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
+        cameraController.enabled = false;
     }
 
     public void QuitGame()
