@@ -67,6 +67,8 @@ public class IntroLightFade : MonoBehaviour
         musicSrc.loop = true;
         musicSrc.Play();
 
+        
+
         healthBarAnimator.SetTrigger("SlideIn");
         weaponUIAnimator.SetTrigger("SlideIn");
 

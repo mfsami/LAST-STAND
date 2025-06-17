@@ -39,6 +39,8 @@ public class Player : MonoBehaviour
     public AudioSource deathBuildSrc;
     public AudioClip buildUp;
 
+    public AudioSource musicSrc;
+
 
     private void Start()
     {
@@ -166,6 +168,8 @@ public class Player : MonoBehaviour
 
         isDead = true;
         walkSrc.Stop();
+
+        musicSrc.Stop();
 
         deathBuildSrc.clip = buildUp;
 
